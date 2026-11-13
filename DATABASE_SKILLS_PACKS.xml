@@ -1,0 +1,17 @@
+<SKILLS_PACKS>
+  <SKILL_PACK-PC_PUGILISTA>
+    <RarityRange MinimumCount="0" MaximumCount="100" />
+    <GuarantedSkill Value="SKILL-PC_GOLPE" />
+    <SkillGroupFilters>
+      <SkillGroupSingleFilter Name="Fallback" Requirement="NecessaryType" />
+    </SkillGroupFilters>
+  </SKILL_PACK-PC_PUGILISTA>
+  <SKILL_PACK-PC_HELDEN>
+    <RarityRange MinimumCount="0" MaximumCount="100" />
+    <GuarantedSkill Value="SKILL-PC_GOLPE" />
+    <GuarantedSkill Value="SKILL-PC_ANIMO" />
+    <SkillGroupFilters>
+      <SkillGroupSingleFilter Name="Fallback" Requirement="NecessaryType" />
+    </SkillGroupFilters>
+  </SKILL_PACK-PC_HELDEN>
+</SKILLS_PACKS>

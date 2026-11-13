@@ -1,0 +1,15 @@
+<SKILLS_1_NATURAL name="1_Natural">
+  <SKILL-PC_GOLPE Rarity="0">
+    <DescriptionInfo Name="DES_PC_GOLPE" Description="DES_PC_GOLPE_DES" IconName="PC_golpe_de_encontro" />
+    <BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY" />
+    <SkillSubskill Value="SUBSKILL-PC_GOLPE" />
+    <SkillGroupFilter Value="Fallback" />
+  </SKILL-PC_GOLPE>
+  <SKILL-PC_ANIMO Rarity="60">
+    <DescriptionInfo Name="DES_PC_ANIMO" Description="DES_PC_ANIMO_DES" IconName="PC_animo_inabalavel" />
+    <BaseEssence Amount="20" Tag="TAG-ESSENCE_GRAY" />
+    <SkillSubskill Value="SUBSKILL-INSPIRE" />
+    <SkillGroupFilter Value="ClassZerca" />
+    <SkillGroupFilter Value="AdvBuffGiver" />
+  </SKILL-PC_ANIMO>
+</SKILLS_1_NATURAL>

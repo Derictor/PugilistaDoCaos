@@ -1,0 +1,30 @@
+<SUBRACES>
+  <SUBRACE-PC_HELDEN>
+    <DescriptionInfo Name="DES_PC_PUGILISTA" Description="DES_PC_PUGILISTA_DES" IconName="PC_classe_punho" />
+    <Race Value="RACE-HUMAN" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-HUMANOID" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-WARRIOR" />
+    <MainSubraceAttributes Amount="10" Tag="TAG-WITS" />
+    <MainSubraceAttributes Amount="12" Tag="TAG-STRENGTH" />
+    <MainSubraceAttributes Amount="9" Tag="TAG-PERCEPTION" />
+    <MainSubraceAttributes Amount="8" Tag="TAG-INTELLIGENCE" />
+    <MainSubraceAttributes Amount="5" Tag="TAG-WISDOM" />
+    <MainSubraceAttributes Amount="1" Tag="TAG-MYSTICISM" />
+    <MainSubraceAttributes Amount="1" Tag="TAG-DESTINY" />
+    <SecondSubraceAttributes Amount="25" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    <SecondSubraceAttributes Amount="24" Tag="TAG-MAX_HEALTH_MENTAL" />
+    <SecondSubraceAttributes Amount="10" Tag="TAG-MAX_HEALTH_SPIRIT" />
+    <SecondSubraceAttributes Amount="5" Tag="TAG-MOVEMENT_RANGE" />
+    <SecondSubraceAttributes Amount="2" Tag="TAG-RANGE_OF_SIGHT_DAY" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-RANGE_OF_SIGHT_NIGHT" />
+    <SecondSubraceAttributes Amount="90" Tag="TAG-MORALE" />
+    <SecondSubraceAttributes Amount="500" Tag="TAG-PERSONAL_CARRY_LIMIT" />
+    <NaturalSkills Value="SKILL_PACK-RACE_HUM" />
+    <ClassSkills Value="SKILL_PACK-PC_HELDEN" />
+    <AdvancementSkills Value="SKILL_PACK-RANDOM_ADVANCEMENT" />
+    <CommonSubraceAttributes Chance="100">
+      <CountedTag Amount="1" Tag="TAG-GENDER_MALE" />
+    </CommonSubraceAttributes>
+    <GraphicMale Value="PC_Helden" />
+  </SUBRACE-PC_HELDEN>
+</SUBRACES>

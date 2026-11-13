@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ModInfo Name="Pugilista do Caos" Graphic="PC_Helden.png" Visibility="2">
+  <IMAGE Name="PC_Helden" Path="PC_Helden.png" MemoryStorage="true" TagMode="false" EventImage="false" Model="HumanWarriorM01" />
+  <IMAGE Name="PC_Recrutamento" Path="PC_Recrutamento.png" MemoryStorage="false" TagMode="false" EventImage="true" />
+  <IMAGE Name="PC_Treino" Path="PC_Treino.png" MemoryStorage="false" TagMode="false" EventImage="true" />
+  <IMAGE Name="PC_classe_punho" Path="PC_classe_punho.png" MemoryStorage="true" TagMode="false" EventImage="false" />
+  <IMAGE Name="PC_golpe_de_encontro" Path="PC_golpe_de_encontro.png" MemoryStorage="true" TagMode="false" EventImage="false" />
+  <IMAGE Name="PC_animo_inabalavel" Path="PC_animo_inabalavel.png" MemoryStorage="true" TagMode="false" EventImage="false" />
+  <DB>DATABASE_SUBRACE.xml</DB>
+  <DB>DATABASE_DES_NAMES.xml</DB>
+  <DB>DATABASE_SKILLS_PACKS.xml</DB>
+  <DB>DATABASE_SKILLS_1_NATURAL.xml</DB>
+  <DB>DATABASE_SUBSKILLS_CHALLENGES_OFFENCE.xml</DB>
+  <DB>DATABASE_DES_LOCALIZATION.xml</DB>
+  <STORY_MODULE>PC_EscolaDeHelden.xml</STORY_MODULE>
+  <TAG>Characters</TAG>
+</ModInfo>

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="PC_EscolaDeHelden" lastEventIndex="2" allowToUse="true" uniqueModuleID="1740269537">
+  <Adventure name="O Peso da Volta" uniqueID="1" allowOnce="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="40" positionY="-30" width="350" height="660" image="PC_Recrutamento">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_TurnAboveOrEqualValue" parameter="5" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="365" fromY="-580" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="500" positionY="-30" width="350" height="660">
+      <outputs ownerID="2" targetID="3" fromX="825" fromY="-580" name="Ajudar no resgate e convidar Helden." />
+      <outputs ownerID="2" targetID="4" fromX="825" fromY="-660" name="Seguir viagem." />O celeiro range. Debaixo de uma viga, Helden segura a passagem enquanto os viajantes procuram uma saída.
+
+— O grão pode esperar. Primeiro, tirem o pessoal daqui.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="960" positionY="-30" width="350" height="660">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddCharacter" parameter="1" tag="SUBRACE-PC_HELDEN" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="3" targetID="4" fromX="1285" fromY="-580" name="Partir com Helden." />Quando todos chegam ao abrigo, Helden enfaixa as mãos e pede um lugar na expedição.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1420" positionY="-30" width="350" height="660" linkedEventUniqueID="0" />
+  </Adventure>
+  <Adventure name="A Primeira Guarda" uniqueID="2" allowOnce="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="40" positionY="-30" width="350" height="660" image="PC_Treino">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="helden">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="SUBRACE-PC_HELDEN" />
+          </LogicFilter>
+          <LogicResultAction list="helden">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicFilter name="helden">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="SUBRACE-PC_HELDEN" />
+          </LogicFilter>
+          <LogicFilter name="guerreiros">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="TAG-WARRIOR" />
+          </LogicFilter>
+          <LogicProcessing name="candidatos" list1="guerreiros" list2="helden">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicResultAction list="candidatos">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="365" fromY="-580" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="500" positionY="-30" width="350" height="660">
+      <outputs ownerID="2" targetID="3" fromX="825" fromY="-580" name="Pedir que Helden ensine o primeiro guerreiro do grupo." />
+      <outputs ownerID="2" targetID="4" fromX="825" fromY="-660" name="Encerrar o treino." />Helden bate a poeira das faixas.
+
+— Vai errar o passo. Todo mundo erra. Volta e tenta mais uma vez.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="960" positionY="-30" width="350" height="660">
+      <logic>
+        <ModifierBlock>
+          <LogicFilter name="helden">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="SUBRACE-PC_HELDEN" />
+          </LogicFilter>
+          <LogicFilter name="guerreiros">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="TAG-WARRIOR" />
+          </LogicFilter>
+          <LogicProcessing name="candidatos" list1="guerreiros" list2="helden">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicProcessing name="aprendiz" list1="candidatos">
+            <scriptCallWithTag scriptName="FLP_GetTopXElements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="aprendiz">
+            <scriptCallWithTag scriptName="FMO_ChangeLearnedSkillOnCharacter" parameter="1" tag="SKILL_PACK-PC_PUGILISTA" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="3" targetID="4" fromX="1285" fromY="-580" name="Voltar ao acampamento." />O aprendiz repete o movimento até conseguir acompanhar Helden.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1420" positionY="-30" width="350" height="660" linkedEventUniqueID="0" />
+  </Adventure>
+</MODULE>
