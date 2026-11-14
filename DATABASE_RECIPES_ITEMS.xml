@@ -1,0 +1,225 @@
+<RECIPES_ITEMS>
+  <ITEM_REC-PC_LUVAS ItemsAmount="1" WeightMultiplier="0.55">
+    <InventorySlot Value="RightHand" />
+    <InventorySlot Value="LeftHand" />
+    <RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_PC_ITEM_LUVAS" Description="DES_PC_ITEM_LUVAS_DES" IconName="PC_ITEM_LUVAS" />
+      <CountedTag Tag="TAG-PC_ITEM_LUVAS" Amount="1" />
+      <MaterialRow>
+        <Material ResourceCount="3">
+          <Resource Value="RES-LEATHER" />
+        </Material>
+      </MaterialRow>
+      <MaterialRow>
+        <Material ResourceCount="3">
+          <Resource Value="RES-LEATHER" />
+        </Material>
+      </MaterialRow>
+    </RecipeBase>
+    <Skills Value="SKILL_PACK-PC_ITEM_LUVAS" />
+  </ITEM_REC-PC_LUVAS>
+  <ITEM_REC-PC_SOCO ItemsAmount="1" WeightMultiplier="0.55">
+    <InventorySlot Value="RightHand" />
+    <InventorySlot Value="LeftHand" />
+    <RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_PC_ITEM_SOCO" Description="DES_PC_ITEM_SOCO_DES" IconName="PC_ITEM_SOCO" />
+      <CountedTag Tag="TAG-PC_ITEM_SOCO" Amount="1" />
+      <MaterialRow>
+        <Material ResourceCount="8">
+          <Resource Value="RES-IRON" />
+        </Material>
+      </MaterialRow>
+      <MaterialRow>
+        <Material ResourceCount="8">
+          <Resource Value="RES-LEATHER" />
+        </Material>
+      </MaterialRow>
+    </RecipeBase>
+    <Skills Value="SKILL_PACK-PC_ITEM_SOCO" />
+  </ITEM_REC-PC_SOCO>
+  <ITEM_REC-PC_MASCARA ItemsAmount="1" WeightMultiplier="0.55">
+    <InventorySlot Value="RightHand" />
+    <InventorySlot Value="LeftHand" />
+    <RecipeBase ResearchCost="-2" ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_PC_ITEM_MASCARA" Description="DES_PC_ITEM_MASCARA_DES" IconName="PC_ITEM_MASCARA" />
+      <CountedTag Tag="TAG-PC_ITEM_MASCARA" Amount="1" />
+      <MaterialRow>
+        <Material ResourceCount="9">
+          <Resource Value="RES-IRON" />
+        </Material>
+      </MaterialRow>
+      <MaterialRow>
+        <Material ResourceCount="9">
+          <Resource Value="RES-LEATHER" />
+        </Material>
+      </MaterialRow>
+    </RecipeBase>
+    <Skills Value="SKILL_PACK-PC_ITEM_MASCARA" />
+  </ITEM_REC-PC_MASCARA>
+  <ITEM_REC-PC_TRIPLAS ItemsAmount="1" WeightMultiplier="0.55">
+    <InventorySlot Value="RightHand" />
+    <InventorySlot Value="LeftHand" />
+    <RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_PC_ITEM_TRIPLAS" Description="DES_PC_ITEM_TRIPLAS_DES" IconName="PC_ITEM_TRIPLAS" />
+      <CountedTag Tag="TAG-PC_ITEM_TRIPLAS" Amount="1" />
+      <MaterialRow>
+        <Material ResourceCount="12">
+          <Resource Value="RES-STEEL" />
+        </Material>
+      </MaterialRow>
+      <MaterialRow>
+        <Material ResourceCount="12">
+          <Resource Value="RES-LEATHER" />
+        </Material>
+      </MaterialRow>
+    </RecipeBase>
+    <Skills Value="SKILL_PACK-PC_ITEM_TRIPLAS" />
+  </ITEM_REC-PC_TRIPLAS>
+  <ITEM_REC-PC_DUPLAS ItemsAmount="1" WeightMultiplier="0.55">
+    <InventorySlot Value="RightHand" />
+    <InventorySlot Value="LeftHand" />
+    <RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_PC_ITEM_DUPLAS" Description="DES_PC_ITEM_DUPLAS_DES" IconName="PC_ITEM_DUPLAS" />
+      <CountedTag Tag="TAG-PC_ITEM_DUPLAS" Amount="1" />
+      <MaterialRow>
+        <Material ResourceCount="8">
+          <Resource Value="RES-IRON" />
+        </Material>
+      </MaterialRow>
+      <MaterialRow>
+        <Material ResourceCount="8">
+          <Resource Value="RES-LEATHER" />
+        </Material>
+      </MaterialRow>
+    </RecipeBase>
+    <Skills Value="SKILL_PACK-PC_ITEM_DUPLAS" />
+  </ITEM_REC-PC_DUPLAS>
+  <ITEM_REC-PC_PESADELO ItemsAmount="0" WeightMultiplier="0.55">
+    <InventorySlot Value="RightHand" />
+    <InventorySlot Value="LeftHand" />
+    <RecipeBase ResearchCost="0" ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_PC_ITEM_PESADELO" Description="DES_PC_ITEM_PESADELO_DES" IconName="PC_ITEM_PESADELO" />
+      <CountedTag Tag="TAG-PC_ITEM_PESADELO" Amount="1" />
+      <MaterialRow>
+        <Material ResourceCount="10">
+          <Resource Value="RES-IRON" />
+        </Material>
+      </MaterialRow>
+      <MaterialRow>
+        <Material ResourceCount="10">
+          <Resource Value="RES-LEATHER" />
+        </Material>
+      </MaterialRow>
+    </RecipeBase>
+    <Skills Value="SKILL_PACK-PC_ITEM_PESADELO" />
+  </ITEM_REC-PC_PESADELO>
+  <ITEM_REC-PC_FAIXAS ItemsAmount="1" WeightMultiplier="0.55">
+    <InventorySlot Value="RightHand" />
+    <InventorySlot Value="LeftHand" />
+    <RecipeBase ResearchCost="0" ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_PC_ITEM_FAIXAS" Description="DES_PC_ITEM_FAIXAS_DES" IconName="PC_ITEM_FAIXAS" />
+      <CountedTag Tag="TAG-PC_ITEM_FAIXAS" Amount="1" />
+      <MaterialRow>
+        <Material ResourceCount="2">
+          <Resource Value="RES-LEATHER" />
+        </Material>
+      </MaterialRow>
+      <MaterialRow>
+        <Material ResourceCount="2">
+          <Resource Value="RES-LEATHER" />
+        </Material>
+      </MaterialRow>
+    </RecipeBase>
+    <Skills Value="SKILL_PACK-PC_ITEM_FAIXAS" />
+  </ITEM_REC-PC_FAIXAS>
+  <ITEM_REC-PC_CABECA ItemsAmount="1" WeightMultiplier="0.55">
+    <InventorySlot Value="Jewellery" />
+    <RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_PC_ITEM_CABECA" Description="DES_PC_ITEM_CABECA_DES" IconName="PC_ITEM_CABECA" />
+      <CountedTag Tag="TAG-PC_ITEM_CABECA" Amount="1" />
+      <MaterialRow>
+        <Material ResourceCount="2">
+          <Resource Value="RES-LEATHER" />
+        </Material>
+      </MaterialRow>
+      <MaterialRow>
+        <Material ResourceCount="2">
+          <Resource Value="RES-LEATHER" />
+        </Material>
+      </MaterialRow>
+    </RecipeBase>
+    <Skills Value="SKILL_PACK-PC_ITEM_CABECA" />
+  </ITEM_REC-PC_CABECA>
+  <ITEM_REC-PC_CALCAS ItemsAmount="1" WeightMultiplier="0.55">
+    <InventorySlot Value="Armour" />
+    <RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_PC_ITEM_CALCAS" Description="DES_PC_ITEM_CALCAS_DES" IconName="PC_ITEM_CALCAS" />
+      <CountedTag Tag="TAG-PC_ITEM_CALCAS" Amount="1" />
+      <MaterialRow>
+        <Material ResourceCount="4">
+          <Resource Value="RES-LEATHER" />
+        </Material>
+      </MaterialRow>
+      <MaterialRow>
+        <Material ResourceCount="3">
+          <Resource Value="RES-LEATHER" />
+        </Material>
+      </MaterialRow>
+    </RecipeBase>
+    <Skills Value="SKILL_PACK-PC_ITEM_CALCAS" />
+  </ITEM_REC-PC_CALCAS>
+  <ITEM_REC-PC_KIMONO ItemsAmount="1" WeightMultiplier="0.55">
+    <InventorySlot Value="Armour" />
+    <RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_PC_ITEM_KIMONO" Description="DES_PC_ITEM_KIMONO_DES" IconName="PC_ITEM_KIMONO" />
+      <CountedTag Tag="TAG-PC_ITEM_KIMONO" Amount="1" />
+      <MaterialRow>
+        <Material ResourceCount="5">
+          <Resource Value="RES-LEATHER" />
+        </Material>
+      </MaterialRow>
+      <MaterialRow>
+        <Material ResourceCount="4">
+          <Resource Value="RES-LEATHER" />
+        </Material>
+      </MaterialRow>
+    </RecipeBase>
+    <Skills Value="SKILL_PACK-PC_ITEM_KIMONO" />
+  </ITEM_REC-PC_KIMONO>
+  <ITEM_REC-PC_REFORCADO ItemsAmount="1" WeightMultiplier="0.55">
+    <InventorySlot Value="Armour" />
+    <RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_PC_ITEM_REFORCADO" Description="DES_PC_ITEM_REFORCADO_DES" IconName="PC_ITEM_REFORCADO" />
+      <CountedTag Tag="TAG-PC_ITEM_REFORCADO" Amount="1" />
+      <MaterialRow>
+        <Material ResourceCount="12">
+          <Resource Value="RES-SCALED_LEATHER" />
+        </Material>
+      </MaterialRow>
+      <MaterialRow>
+        <Material ResourceCount="12">
+          <Resource Value="RES-LEATHER" />
+        </Material>
+      </MaterialRow>
+    </RecipeBase>
+    <Skills Value="SKILL_PACK-PC_ITEM_REFORCADO" />
+  </ITEM_REC-PC_REFORCADO>
+  <ITEM_REC-PC_ARNES ItemsAmount="1" WeightMultiplier="0.55">
+    <InventorySlot Value="Tool" />
+    <RecipeBase ResearchCost="1" ResChildForbid="FALSE">
+      <DescriptionInfo Name="DES_PC_ITEM_ARNES" Description="DES_PC_ITEM_ARNES_DES" IconName="PC_ITEM_ARNES" />
+      <CountedTag Tag="TAG-PC_ITEM_ARNES" Amount="1" />
+      <MaterialRow>
+        <Material ResourceCount="4">
+          <Resource Value="RES-LEATHER" />
+        </Material>
+      </MaterialRow>
+      <MaterialRow>
+        <Material ResourceCount="4">
+          <Resource Value="RES-LEATHER" />
+        </Material>
+      </MaterialRow>
+    </RecipeBase>
+    <Skills Value="SKILL_PACK-PC_ITEM_ARNES" />
+  </ITEM_REC-PC_ARNES>
+</RECIPES_ITEMS>

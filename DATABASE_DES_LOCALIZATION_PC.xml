@@ -1,0 +1,38 @@
+<DATABASE_DES_LOCALIZATION-NO_HSH>
+  <LOC_LIBRARY-DES_PC_ENGLISH Language="English">
+    <Entry Key="DES_PC_PUGILISTA" Val="Pugilista do Caos" />
+    <Entry Key="DES_PC_PUGILISTA_DES" Val="Discípulo de uma escola de combate de origem humana." />
+    <Entry Key="DES_PC_GOLPE" Val="Golpe de Encontro" />
+    <Entry Key="DES_PC_GOLPE_DES" Val="Golpe físico rápido de mãos nuas que atrasa o alvo." />
+    <Entry Key="DES_PC_ANIMO" Val="Ânimo Inabalável" />
+    <Entry Key="DES_PC_ANIMO_DES" Val="Helden encoraja seus companheiros." />
+    <Entry Key="DES_PC_FOLEGO" Val="Segundo Fôlego" />
+    <Entry Key="DES_PC_FOLEGO_DES" Val="Começa com proteção física e pode reforçá-la durante o combate." />
+    <Entry Key="DES_PC_ESTOPIM" Val="Estopim" />
+    <Entry Key="DES_PC_ESTOPIM_DES" Val="Golpe físico de alto impacto com recuperação mais lenta." />
+    <Entry Key="DES_PC_ITEM_LUVAS" Val="Luvas de Helden" />
+    <Entry Key="DES_PC_ITEM_LUVAS_DES" Val="Ataque físico rápido." />
+    <Entry Key="DES_PC_ITEM_SOCO" Val="Soco-Inglês de Forja" />
+    <Entry Key="DES_PC_ITEM_SOCO_DES" Val="Ataque físico pesado." />
+    <Entry Key="DES_PC_ITEM_MASCARA" Val="Garra da Máscara" />
+    <Entry Key="DES_PC_ITEM_MASCARA_DES" Val="Ataque físico rápido." />
+    <Entry Key="DES_PC_ITEM_TRIPLAS" Val="Garras Triplas" />
+    <Entry Key="DES_PC_ITEM_TRIPLAS_DES" Val="Ataque físico pesado." />
+    <Entry Key="DES_PC_ITEM_DUPLAS" Val="Garras Duplas" />
+    <Entry Key="DES_PC_ITEM_DUPLAS_DES" Val="Ataque físico rápido." />
+    <Entry Key="DES_PC_ITEM_PESADELO" Val="Luva do Pesadelo" />
+    <Entry Key="DES_PC_ITEM_PESADELO_DES" Val="Luva de lâminas encontrada na carvoaria. Seu ataque retarda o alvo." />
+    <Entry Key="DES_PC_ITEM_FAIXAS" Val="Faixas de Mão" />
+    <Entry Key="DES_PC_ITEM_FAIXAS_DES" Val="Ataque físico rápido." />
+    <Entry Key="DES_PC_ITEM_CABECA" Val="Faixa de Cabeça da Escola" />
+    <Entry Key="DES_PC_ITEM_CABECA_DES" Val="Aumenta a proteção em desafios." />
+    <Entry Key="DES_PC_ITEM_CALCAS" Val="Calças do Lutador" />
+    <Entry Key="DES_PC_ITEM_CALCAS_DES" Val="Aumenta a proteção em desafios." />
+    <Entry Key="DES_PC_ITEM_KIMONO" Val="Quimono de Treino" />
+    <Entry Key="DES_PC_ITEM_KIMONO_DES" Val="Aumenta a proteção em desafios." />
+    <Entry Key="DES_PC_ITEM_REFORCADO" Val="Quimono Reforçado" />
+    <Entry Key="DES_PC_ITEM_REFORCADO_DES" Val="Aumenta a proteção em desafios." />
+    <Entry Key="DES_PC_ITEM_ARNES" Val="Arnês de Travessia" />
+    <Entry Key="DES_PC_ITEM_ARNES_DES" Val="Aumenta a capacidade de carga." />
+  </LOC_LIBRARY-DES_PC_ENGLISH>
+</DATABASE_DES_LOCALIZATION-NO_HSH>

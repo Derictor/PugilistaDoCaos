@@ -1,5 +1,6 @@
 <CHARACTER_NAMES>
-  <NAME_COLLECTION-PC_HELDEN Language="Any">
+  <NAME_COLLECTION-PC_HELDEN>
+    <Race Value="RACE-HUMAN" />
     <Subrace Value="SUBRACE-PC_HELDEN" />
     <CharacterMale Value="Helden Yulden" />
   </NAME_COLLECTION-PC_HELDEN>

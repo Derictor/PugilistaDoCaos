@@ -1,11 +1,13 @@
-<?xml version='1.0' encoding='utf-8'?>
-<MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="PC_EscolaDeHelden" lastEventIndex="2" allowToUse="true" uniqueModuleID="1740269537">
+<MODULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="PC_EscolaDeHelden" lastEventIndex="11" allowToUse="true" uniqueModuleID="1740269537">
   <Adventure name="O Peso da Volta" uniqueID="1" allowOnce="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
     <nodes xsi:type="NodeStarting" ID="1" positionX="40" positionY="-30" width="350" height="660" image="PC_Recrutamento">
       <logic>
         <FilterBlock>
           <LogicResultAction>
             <scriptCallWithTag scriptName="FRA_TurnAboveOrEqualValue" parameter="5" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PC_UniqueRecruitment" />
           </LogicResultAction>
         </FilterBlock>
       </logic>
@@ -20,14 +22,14 @@
       <logic>
         <ModifierBlock>
           <LogicModifiers>
-            <scriptCallWithTag scriptName="FMO_AddCharacter" parameter="1" tag="SUBRACE-PC_HELDEN" />
+            <scriptCallWithTag scriptName="FMO_PC_UniqueRecruitment" />
           </LogicModifiers>
         </ModifierBlock>
       </logic>
       <outputs ownerID="3" targetID="4" fromX="1285" fromY="-580" name="Partir com Helden." />Quando todos chegam ao abrigo, Helden enfaixa as mãos e pede um lugar na expedição.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1420" positionY="-30" width="350" height="660" linkedEventUniqueID="0" />
   </Adventure>
-  <Adventure name="A Primeira Guarda" uniqueID="2" allowOnce="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+  <Adventure name="A Primeira Guarda" uniqueID="2" allowOnce="false" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
     <nodes xsi:type="NodeStarting" ID="1" positionX="40" positionY="-30" width="350" height="660" image="PC_Treino">
       <logic>
         <FilterBlock>
@@ -37,13 +39,16 @@
           <LogicResultAction list="helden">
             <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
           </LogicResultAction>
-          <LogicFilter name="helden">
-            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="SUBRACE-PC_HELDEN" />
-          </LogicFilter>
           <LogicFilter name="guerreiros">
             <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="TAG-WARRIOR" />
           </LogicFilter>
-          <LogicProcessing name="candidatos" list1="guerreiros" list2="helden">
+          <LogicProcessing name="outros" list1="guerreiros" list2="helden">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicProcessing name="treinados" list1="outros">
+            <scriptCallWithTag scriptName="FLP_CharactersWithSkill" tag="SKILL-PC_GOLPE" />
+          </LogicProcessing>
+          <LogicProcessing name="candidatos" list1="outros" list2="treinados">
             <scriptCallWithTag scriptName="FLP_AminusB" />
           </LogicProcessing>
           <LogicResultAction list="candidatos">
@@ -67,7 +72,13 @@
           <LogicFilter name="guerreiros">
             <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="TAG-WARRIOR" />
           </LogicFilter>
-          <LogicProcessing name="candidatos" list1="guerreiros" list2="helden">
+          <LogicProcessing name="outros" list1="guerreiros" list2="helden">
+            <scriptCallWithTag scriptName="FLP_AminusB" />
+          </LogicProcessing>
+          <LogicProcessing name="treinados" list1="outros">
+            <scriptCallWithTag scriptName="FLP_CharactersWithSkill" tag="SKILL-PC_GOLPE" />
+          </LogicProcessing>
+          <LogicProcessing name="candidatos" list1="outros" list2="treinados">
             <scriptCallWithTag scriptName="FLP_AminusB" />
           </LogicProcessing>
           <LogicProcessing name="aprendiz" list1="candidatos">
@@ -79,6 +90,540 @@
         </ModifierBlock>
       </logic>
       <outputs ownerID="3" targetID="4" fromX="1285" fromY="-580" name="Voltar ao acampamento." />O aprendiz repete o movimento até conseguir acompanhar Helden.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1420" positionY="-30" width="350" height="660" linkedEventUniqueID="0" />
+  </Adventure>
+  <Adventure name="A Luva do Pesadelo" uniqueID="3" allowOnce="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="40" positionY="-30" width="350" height="660" image="PC_Halloween">
+      <logic>
+        <FilterBlock>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="1" tag="TAG-AUTUMN" />
+          </LogicResultAction>
+          <LogicResultAction>
+            <scriptCallWithTag scriptName="FRA_PlayersHaveSharedTag" parameter="1" tag="TAG-NIGHT" />
+          </LogicResultAction>
+          <LogicFilter name="helden">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="SUBRACE-PC_HELDEN" />
+          </LogicFilter>
+          <LogicResultAction list="helden">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="365" fromY="-580" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="500" positionY="-30" width="350" height="660">
+      <outputs ownerID="2" targetID="3" fromX="825" fromY="-580" name="Entrar juntos e recolher a luva." />
+      <outputs ownerID="2" targetID="4" fromX="825" fromY="-660" name="Seguir viagem." />Nabos acesos cercam a carvoaria. Helden segura a porta enquanto alguém da expedição lê o aviso riscado na madeira.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="960" positionY="-30" width="350" height="660">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-PC_PESADELO" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="3" targetID="4" fromX="1285" fromY="-580" name="Partir." />Helden entrega a luva e ajuda a apagar as lanternas antes de partir.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1420" positionY="-30" width="350" height="660" linkedEventUniqueID="0" />
+  </Adventure>
+  <Adventure name="O Duelista da Máscara" uniqueID="4" allowOnce="true" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="40" positionY="-30" width="350" height="660" image="PC_Duelista">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="helden">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="SUBRACE-PC_HELDEN" />
+          </LogicFilter>
+          <LogicResultAction list="helden">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="365" fromY="-580" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="500" positionY="-30" width="350" height="660">
+      <outputs ownerID="2" targetID="3" fromX="825" fromY="-580" name="Pedir uma demonstração." />
+      <outputs ownerID="2" targetID="4" fromX="825" fromY="-660" name="Seguir viagem." />Um duelista se abriga da chuva na forja. Helden oferece lugar junto ao fogo, e o viajante mostra como encaixa sua garra.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="960" positionY="-30" width="350" height="660">
+      <logic>
+        <ModifierBlock>
+          <LogicModifiers list="helden">
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-PC_MASCARA" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_UnlockTech" tag="ITEM_TECH-PC_MASCARA" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="3" targetID="4" fromX="1285" fromY="-580" name="Partir." />O duelista deixa a garra para a escola e segue antes da próxima chuva.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1420" positionY="-30" width="350" height="660" linkedEventUniqueID="0" />
+  </Adventure>
+  <Adventure name="A Graduação do Punho (HUM)" uniqueID="5" allowOnce="false" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="40" positionY="-30" width="350" height="660" image="PC_Treino">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="criancas">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="TAG-CHILD_HUM" />
+          </LogicFilter>
+          <LogicProcessing name="growing_up" list1="criancas">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="1" tag="TAG-GROWING_UP" />
+          </LogicProcessing>
+          <LogicProcessing name="strength" list1="growing_up">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="5" tag="TAG-STRENGTH" />
+          </LogicProcessing>
+          <LogicProcessing name="perception" list1="strength">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-PERCEPTION" />
+          </LogicProcessing>
+          <LogicProcessing name="wisdom" list1="perception">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-WISDOM" />
+          </LogicProcessing>
+          <LogicFilter name="helden">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="SUBRACE-PC_HELDEN" />
+          </LogicFilter>
+          <LogicResultAction list="helden">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction list="wisdom">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="365" fromY="-580" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="500" positionY="-30" width="350" height="660">
+      <outputs ownerID="2" targetID="3" fromX="825" fromY="-580" name="Escolher o caminho do Pugilista do Caos." />
+      <outputs ownerID="2" targetID="4" fromX="825" fromY="-660" name="Seguir viagem." />Helden avalia a força, o olhar e o discernimento de quem chegou à idade adulta. Há um lugar na roda para o próximo aprendiz.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="960" positionY="-30" width="350" height="660">
+      <logic>
+        <ModifierBlock>
+          <LogicFilter name="criancas">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="TAG-CHILD_HUM" />
+          </LogicFilter>
+          <LogicProcessing name="growing_up" list1="criancas">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="1" tag="TAG-GROWING_UP" />
+          </LogicProcessing>
+          <LogicProcessing name="strength" list1="growing_up">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="5" tag="TAG-STRENGTH" />
+          </LogicProcessing>
+          <LogicProcessing name="perception" list1="strength">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-PERCEPTION" />
+          </LogicProcessing>
+          <LogicProcessing name="wisdom" list1="perception">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-WISDOM" />
+          </LogicProcessing>
+          <LogicProcessing name="graduando" list1="wisdom">
+            <scriptCallWithTag scriptName="FLP_GetTopXElements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="graduando">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubrace" tag="SUBRACE-PC_PUGILISTA_HUM" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-PC_FAIXAS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="3" targetID="4" fromX="1285" fromY="-580" name="Partir." />Helden entrega as primeiras faixas ao novo pugilista.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1420" positionY="-30" width="350" height="660" linkedEventUniqueID="0" />
+  </Adventure>
+  <Adventure name="A Graduação do Punho (ELF)" uniqueID="6" allowOnce="false" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="40" positionY="-30" width="350" height="660" image="PC_Treino">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="criancas">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="TAG-CHILD_ELF" />
+          </LogicFilter>
+          <LogicProcessing name="growing_up" list1="criancas">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="1" tag="TAG-GROWING_UP" />
+          </LogicProcessing>
+          <LogicProcessing name="strength" list1="growing_up">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="5" tag="TAG-STRENGTH" />
+          </LogicProcessing>
+          <LogicProcessing name="perception" list1="strength">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-PERCEPTION" />
+          </LogicProcessing>
+          <LogicProcessing name="wisdom" list1="perception">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-WISDOM" />
+          </LogicProcessing>
+          <LogicFilter name="helden">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="SUBRACE-PC_HELDEN" />
+          </LogicFilter>
+          <LogicResultAction list="helden">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction list="wisdom">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="365" fromY="-580" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="500" positionY="-30" width="350" height="660">
+      <outputs ownerID="2" targetID="3" fromX="825" fromY="-580" name="Escolher o caminho do Pugilista do Caos." />
+      <outputs ownerID="2" targetID="4" fromX="825" fromY="-660" name="Seguir viagem." />Helden avalia a força, o olhar e o discernimento de quem chegou à idade adulta. Há um lugar na roda para o próximo aprendiz.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="960" positionY="-30" width="350" height="660">
+      <logic>
+        <ModifierBlock>
+          <LogicFilter name="criancas">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="TAG-CHILD_ELF" />
+          </LogicFilter>
+          <LogicProcessing name="growing_up" list1="criancas">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="1" tag="TAG-GROWING_UP" />
+          </LogicProcessing>
+          <LogicProcessing name="strength" list1="growing_up">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="5" tag="TAG-STRENGTH" />
+          </LogicProcessing>
+          <LogicProcessing name="perception" list1="strength">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-PERCEPTION" />
+          </LogicProcessing>
+          <LogicProcessing name="wisdom" list1="perception">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-WISDOM" />
+          </LogicProcessing>
+          <LogicProcessing name="graduando" list1="wisdom">
+            <scriptCallWithTag scriptName="FLP_GetTopXElements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="graduando">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubrace" tag="SUBRACE-PC_PUGILISTA_ELF" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-PC_FAIXAS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="3" targetID="4" fromX="1285" fromY="-580" name="Partir." />Helden entrega as primeiras faixas ao novo pugilista.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1420" positionY="-30" width="350" height="660" linkedEventUniqueID="0" />
+  </Adventure>
+  <Adventure name="A Graduação do Punho (DWARF)" uniqueID="7" allowOnce="false" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="40" positionY="-30" width="350" height="660" image="PC_Treino">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="criancas">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="TAG-CHILD_DWARF" />
+          </LogicFilter>
+          <LogicProcessing name="growing_up" list1="criancas">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="1" tag="TAG-GROWING_UP" />
+          </LogicProcessing>
+          <LogicProcessing name="strength" list1="growing_up">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="5" tag="TAG-STRENGTH" />
+          </LogicProcessing>
+          <LogicProcessing name="perception" list1="strength">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-PERCEPTION" />
+          </LogicProcessing>
+          <LogicProcessing name="wisdom" list1="perception">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-WISDOM" />
+          </LogicProcessing>
+          <LogicFilter name="helden">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="SUBRACE-PC_HELDEN" />
+          </LogicFilter>
+          <LogicResultAction list="helden">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction list="wisdom">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="365" fromY="-580" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="500" positionY="-30" width="350" height="660">
+      <outputs ownerID="2" targetID="3" fromX="825" fromY="-580" name="Escolher o caminho do Pugilista do Caos." />
+      <outputs ownerID="2" targetID="4" fromX="825" fromY="-660" name="Seguir viagem." />Helden avalia a força, o olhar e o discernimento de quem chegou à idade adulta. Há um lugar na roda para o próximo aprendiz.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="960" positionY="-30" width="350" height="660">
+      <logic>
+        <ModifierBlock>
+          <LogicFilter name="criancas">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="TAG-CHILD_DWARF" />
+          </LogicFilter>
+          <LogicProcessing name="growing_up" list1="criancas">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="1" tag="TAG-GROWING_UP" />
+          </LogicProcessing>
+          <LogicProcessing name="strength" list1="growing_up">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="5" tag="TAG-STRENGTH" />
+          </LogicProcessing>
+          <LogicProcessing name="perception" list1="strength">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-PERCEPTION" />
+          </LogicProcessing>
+          <LogicProcessing name="wisdom" list1="perception">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-WISDOM" />
+          </LogicProcessing>
+          <LogicProcessing name="graduando" list1="wisdom">
+            <scriptCallWithTag scriptName="FLP_GetTopXElements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="graduando">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubrace" tag="SUBRACE-PC_PUGILISTA_DWARF" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-PC_FAIXAS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="3" targetID="4" fromX="1285" fromY="-580" name="Partir." />Helden entrega as primeiras faixas ao novo pugilista.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1420" positionY="-30" width="350" height="660" linkedEventUniqueID="0" />
+  </Adventure>
+  <Adventure name="A Graduação do Punho (GOB)" uniqueID="8" allowOnce="false" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="40" positionY="-30" width="350" height="660" image="PC_Treino">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="criancas">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="TAG-CHILD_GOB" />
+          </LogicFilter>
+          <LogicProcessing name="growing_up" list1="criancas">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="1" tag="TAG-GROWING_UP" />
+          </LogicProcessing>
+          <LogicProcessing name="strength" list1="growing_up">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="5" tag="TAG-STRENGTH" />
+          </LogicProcessing>
+          <LogicProcessing name="perception" list1="strength">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-PERCEPTION" />
+          </LogicProcessing>
+          <LogicProcessing name="wisdom" list1="perception">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-WISDOM" />
+          </LogicProcessing>
+          <LogicFilter name="helden">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="SUBRACE-PC_HELDEN" />
+          </LogicFilter>
+          <LogicResultAction list="helden">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction list="wisdom">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="365" fromY="-580" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="500" positionY="-30" width="350" height="660">
+      <outputs ownerID="2" targetID="3" fromX="825" fromY="-580" name="Escolher o caminho do Pugilista do Caos." />
+      <outputs ownerID="2" targetID="4" fromX="825" fromY="-660" name="Seguir viagem." />Helden avalia a força, o olhar e o discernimento de quem chegou à idade adulta. Há um lugar na roda para o próximo aprendiz.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="960" positionY="-30" width="350" height="660">
+      <logic>
+        <ModifierBlock>
+          <LogicFilter name="criancas">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="TAG-CHILD_GOB" />
+          </LogicFilter>
+          <LogicProcessing name="growing_up" list1="criancas">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="1" tag="TAG-GROWING_UP" />
+          </LogicProcessing>
+          <LogicProcessing name="strength" list1="growing_up">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="5" tag="TAG-STRENGTH" />
+          </LogicProcessing>
+          <LogicProcessing name="perception" list1="strength">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-PERCEPTION" />
+          </LogicProcessing>
+          <LogicProcessing name="wisdom" list1="perception">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-WISDOM" />
+          </LogicProcessing>
+          <LogicProcessing name="graduando" list1="wisdom">
+            <scriptCallWithTag scriptName="FLP_GetTopXElements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="graduando">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubrace" tag="SUBRACE-PC_PUGILISTA_GOB" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-PC_FAIXAS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="3" targetID="4" fromX="1285" fromY="-580" name="Partir." />Helden entrega as primeiras faixas ao novo pugilista.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1420" positionY="-30" width="350" height="660" linkedEventUniqueID="0" />
+  </Adventure>
+  <Adventure name="A Graduação do Punho (ORC)" uniqueID="9" allowOnce="false" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="40" positionY="-30" width="350" height="660" image="PC_Treino">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="criancas">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="TAG-CHILD_ORC" />
+          </LogicFilter>
+          <LogicProcessing name="growing_up" list1="criancas">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="1" tag="TAG-GROWING_UP" />
+          </LogicProcessing>
+          <LogicProcessing name="strength" list1="growing_up">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="5" tag="TAG-STRENGTH" />
+          </LogicProcessing>
+          <LogicProcessing name="perception" list1="strength">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-PERCEPTION" />
+          </LogicProcessing>
+          <LogicProcessing name="wisdom" list1="perception">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-WISDOM" />
+          </LogicProcessing>
+          <LogicFilter name="helden">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="SUBRACE-PC_HELDEN" />
+          </LogicFilter>
+          <LogicResultAction list="helden">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction list="wisdom">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="365" fromY="-580" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="500" positionY="-30" width="350" height="660">
+      <outputs ownerID="2" targetID="3" fromX="825" fromY="-580" name="Escolher o caminho do Pugilista do Caos." />
+      <outputs ownerID="2" targetID="4" fromX="825" fromY="-660" name="Seguir viagem." />Helden avalia a força, o olhar e o discernimento de quem chegou à idade adulta. Há um lugar na roda para o próximo aprendiz.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="960" positionY="-30" width="350" height="660">
+      <logic>
+        <ModifierBlock>
+          <LogicFilter name="criancas">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="TAG-CHILD_ORC" />
+          </LogicFilter>
+          <LogicProcessing name="growing_up" list1="criancas">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="1" tag="TAG-GROWING_UP" />
+          </LogicProcessing>
+          <LogicProcessing name="strength" list1="growing_up">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="5" tag="TAG-STRENGTH" />
+          </LogicProcessing>
+          <LogicProcessing name="perception" list1="strength">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-PERCEPTION" />
+          </LogicProcessing>
+          <LogicProcessing name="wisdom" list1="perception">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-WISDOM" />
+          </LogicProcessing>
+          <LogicProcessing name="graduando" list1="wisdom">
+            <scriptCallWithTag scriptName="FLP_GetTopXElements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="graduando">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubrace" tag="SUBRACE-PC_PUGILISTA_ORC" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-PC_FAIXAS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="3" targetID="4" fromX="1285" fromY="-580" name="Partir." />Helden entrega as primeiras faixas ao novo pugilista.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1420" positionY="-30" width="350" height="660" linkedEventUniqueID="0" />
+  </Adventure>
+  <Adventure name="A Graduação do Punho (PIRATE_ORC)" uniqueID="10" allowOnce="false" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="40" positionY="-30" width="350" height="660" image="PC_Treino">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="criancas">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="TAG-CHILD_PIRATE_ORC" />
+          </LogicFilter>
+          <LogicProcessing name="growing_up" list1="criancas">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="1" tag="TAG-GROWING_UP" />
+          </LogicProcessing>
+          <LogicProcessing name="strength" list1="growing_up">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="5" tag="TAG-STRENGTH" />
+          </LogicProcessing>
+          <LogicProcessing name="perception" list1="strength">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-PERCEPTION" />
+          </LogicProcessing>
+          <LogicProcessing name="wisdom" list1="perception">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-WISDOM" />
+          </LogicProcessing>
+          <LogicFilter name="helden">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="SUBRACE-PC_HELDEN" />
+          </LogicFilter>
+          <LogicResultAction list="helden">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction list="wisdom">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="365" fromY="-580" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="500" positionY="-30" width="350" height="660">
+      <outputs ownerID="2" targetID="3" fromX="825" fromY="-580" name="Escolher o caminho do Pugilista do Caos." />
+      <outputs ownerID="2" targetID="4" fromX="825" fromY="-660" name="Seguir viagem." />Helden avalia a força, o olhar e o discernimento de quem chegou à idade adulta. Há um lugar na roda para o próximo aprendiz.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="960" positionY="-30" width="350" height="660">
+      <logic>
+        <ModifierBlock>
+          <LogicFilter name="criancas">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="TAG-CHILD_PIRATE_ORC" />
+          </LogicFilter>
+          <LogicProcessing name="growing_up" list1="criancas">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="1" tag="TAG-GROWING_UP" />
+          </LogicProcessing>
+          <LogicProcessing name="strength" list1="growing_up">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="5" tag="TAG-STRENGTH" />
+          </LogicProcessing>
+          <LogicProcessing name="perception" list1="strength">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-PERCEPTION" />
+          </LogicProcessing>
+          <LogicProcessing name="wisdom" list1="perception">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-WISDOM" />
+          </LogicProcessing>
+          <LogicProcessing name="graduando" list1="wisdom">
+            <scriptCallWithTag scriptName="FLP_GetTopXElements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="graduando">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubrace" tag="SUBRACE-PC_PUGILISTA_PIRATE_ORC" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-PC_FAIXAS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="3" targetID="4" fromX="1285" fromY="-580" name="Partir." />Helden entrega as primeiras faixas ao novo pugilista.</nodes>
+    <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1420" positionY="-30" width="350" height="660" linkedEventUniqueID="0" />
+  </Adventure>
+  <Adventure name="A Graduação do Punho (GNOLL)" uniqueID="11" allowOnce="false" typeGeneric="false" typePerGroupGeneric="true" typeInterrupt="false" typeExpedition="false" typeVillage="false" difficulty="0" nodeIdMax="4" joinIsForced="false" joinType="OnlyOwn" joinRange="SinglePosition">
+    <nodes xsi:type="NodeStarting" ID="1" positionX="40" positionY="-30" width="350" height="660" image="PC_Treino">
+      <logic>
+        <FilterBlock>
+          <LogicFilter name="criancas">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="TAG-CHILD_GNOLL" />
+          </LogicFilter>
+          <LogicProcessing name="growing_up" list1="criancas">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="1" tag="TAG-GROWING_UP" />
+          </LogicProcessing>
+          <LogicProcessing name="strength" list1="growing_up">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="5" tag="TAG-STRENGTH" />
+          </LogicProcessing>
+          <LogicProcessing name="perception" list1="strength">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-PERCEPTION" />
+          </LogicProcessing>
+          <LogicProcessing name="wisdom" list1="perception">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-WISDOM" />
+          </LogicProcessing>
+          <LogicFilter name="helden">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="SUBRACE-PC_HELDEN" />
+          </LogicFilter>
+          <LogicResultAction list="helden">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+          <LogicResultAction list="wisdom">
+            <scriptCallWithTag scriptName="FRA_ListSizeMoreEqualThan" parameter="1" />
+          </LogicResultAction>
+        </FilterBlock>
+      </logic>
+      <outputs ownerID="1" targetID="2" fromX="365" fromY="-580" />
+    </nodes>
+    <nodes xsi:type="NodeAdventure" ID="2" positionX="500" positionY="-30" width="350" height="660">
+      <outputs ownerID="2" targetID="3" fromX="825" fromY="-580" name="Escolher o caminho do Pugilista do Caos." />
+      <outputs ownerID="2" targetID="4" fromX="825" fromY="-660" name="Seguir viagem." />Helden avalia a força, o olhar e o discernimento de quem chegou à idade adulta. Há um lugar na roda para o próximo aprendiz.</nodes>
+    <nodes xsi:type="NodeAdventure" ID="3" positionX="960" positionY="-30" width="350" height="660">
+      <logic>
+        <ModifierBlock>
+          <LogicFilter name="criancas">
+            <scriptCallWithTag scriptName="FwT_ThisPlayerThisGroupCharacters" parameter="1" tag="TAG-CHILD_GNOLL" />
+          </LogicFilter>
+          <LogicProcessing name="growing_up" list1="criancas">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="1" tag="TAG-GROWING_UP" />
+          </LogicProcessing>
+          <LogicProcessing name="strength" list1="growing_up">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="5" tag="TAG-STRENGTH" />
+          </LogicProcessing>
+          <LogicProcessing name="perception" list1="strength">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-PERCEPTION" />
+          </LogicProcessing>
+          <LogicProcessing name="wisdom" list1="perception">
+            <scriptCallWithTag scriptName="FLP_FilterByTag" parameter="3" tag="TAG-WISDOM" />
+          </LogicProcessing>
+          <LogicProcessing name="graduando" list1="wisdom">
+            <scriptCallWithTag scriptName="FLP_GetTopXElements" parameter="1" />
+          </LogicProcessing>
+          <LogicModifiers list="graduando">
+            <scriptCallWithTag scriptName="FMO_UpgradeToSubrace" tag="SUBRACE-PC_PUGILISTA_GNOLL" />
+          </LogicModifiers>
+          <LogicModifiers>
+            <scriptCallWithTag scriptName="FMO_AddItems" parameter="1" tag="ITEM_CARGO-PC_FAIXAS" />
+          </LogicModifiers>
+        </ModifierBlock>
+      </logic>
+      <outputs ownerID="3" targetID="4" fromX="1285" fromY="-580" name="Partir." />Helden entrega as primeiras faixas ao novo pugilista.</nodes>
     <nodes xsi:type="NodeAdventureEnd" ID="4" positionX="1420" positionY="-30" width="350" height="660" linkedEventUniqueID="0" />
   </Adventure>
 </MODULE>

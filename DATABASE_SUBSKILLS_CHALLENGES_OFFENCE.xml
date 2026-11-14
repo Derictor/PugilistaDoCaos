@@ -37,4 +37,308 @@
       <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
     </SubskillAttributesOnLevel>
   </SUBSKILL-PC_GOLPE>
+  <SUBSKILL-PC_ESTOPIM Delay="4.0" Animation="Explosion2" Sound="AttackDefault">
+    <DescriptionInfo Name="DES_PC_ESTOPIM" Description="DES_PC_ESTOPIM_DES" IconName="PC_ESTOPIM" />
+    <ShortInfo TriggerIcon="TAG-TRIGGER_DO_ATTACK_MELEE" DamageIcon="TAG-DAMAGE_NORMAL_STUN" TargetIcon="TAG-TARGET_SINGLE_MELEE_ENEMY" AttackInfo="{SCRIPT:SI_StunDamage}" />
+    <Trigger Priority="0" RequiredToBeInFrontline="TRUE" RequiredToBeInBackline="FALSE">
+      <TriggerGroup Value="DoAttack" />
+      <TriggerScript ScriptName="" />
+    </Trigger>
+    <Targets>
+      <TargetScript ScriptName="Trg_MeleeTargeting" />
+      <TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random" />
+    </Targets>
+    <Activation ScriptName="Act_DamageAndStun" />
+    <ChallengeType Value="TypePhysical" />
+    <SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+      <MainAtt Amount="1.16" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="1" PowerLevel="10.0">
+      <MainAtt Amount="1.3" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="2" PowerLevel="30.0">
+      <MainAtt Amount="1.74" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="3" PowerLevel="90.0">
+      <MainAtt Amount="2.17" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="4" PowerLevel="250.0">
+      <MainAtt Amount="2.75" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="5" PowerLevel="500.0">
+      <MainAtt Amount="3.33" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+  </SUBSKILL-PC_ESTOPIM>
+  <SUBSKILL-PC_ITEM_LUVAS Delay="1.9" Animation="Explosion2" Sound="AttackDefault">
+    <DescriptionInfo Name="DES_PC_ITEM_LUVAS" Description="DES_PC_ITEM_LUVAS_DES" IconName="PC_ITEM_LUVAS" />
+    <ShortInfo TriggerIcon="TAG-TRIGGER_DO_ATTACK_MELEE" DamageIcon="TAG-DAMAGE_NORMAL_STUN" TargetIcon="TAG-TARGET_SINGLE_MELEE_ENEMY" AttackInfo="{SCRIPT:SI_StunDamage}" />
+    <Trigger Priority="0" RequiredToBeInFrontline="TRUE" RequiredToBeInBackline="FALSE">
+      <TriggerGroup Value="DoAttack" />
+      <TriggerScript ScriptName="" />
+    </Trigger>
+    <Targets>
+      <TargetScript ScriptName="Trg_MeleeTargeting" />
+      <TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random" />
+    </Targets>
+    <Activation ScriptName="Act_DamageAndStun" />
+    <ChallengeType Value="TypePhysical" />
+    <SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+      <MainAtt Amount="0.68" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="1" PowerLevel="10.0">
+      <MainAtt Amount="0.77" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="2" PowerLevel="30.0">
+      <MainAtt Amount="1.02" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="3" PowerLevel="90.0">
+      <MainAtt Amount="1.27" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="4" PowerLevel="250.0">
+      <MainAtt Amount="1.61" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="5" PowerLevel="500.0">
+      <MainAtt Amount="1.95" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+  </SUBSKILL-PC_ITEM_LUVAS>
+  <SUBSKILL-PC_ITEM_SOCO Delay="3.5" Animation="Explosion2" Sound="AttackDefault">
+    <DescriptionInfo Name="DES_PC_ITEM_SOCO" Description="DES_PC_ITEM_SOCO_DES" IconName="PC_ITEM_SOCO" />
+    <ShortInfo TriggerIcon="TAG-TRIGGER_DO_ATTACK_MELEE" DamageIcon="TAG-DAMAGE_NORMAL_STUN" TargetIcon="TAG-TARGET_SINGLE_MELEE_ENEMY" AttackInfo="{SCRIPT:SI_StunDamage}" />
+    <Trigger Priority="0" RequiredToBeInFrontline="TRUE" RequiredToBeInBackline="FALSE">
+      <TriggerGroup Value="DoAttack" />
+      <TriggerScript ScriptName="" />
+    </Trigger>
+    <Targets>
+      <TargetScript ScriptName="Trg_MeleeTargeting" />
+      <TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random" />
+    </Targets>
+    <Activation ScriptName="Act_DamageAndStun" />
+    <ChallengeType Value="TypePhysical" />
+    <SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+      <MainAtt Amount="1.08" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="1" PowerLevel="10.0">
+      <MainAtt Amount="1.22" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="2" PowerLevel="30.0">
+      <MainAtt Amount="1.62" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="3" PowerLevel="90.0">
+      <MainAtt Amount="2.03" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="4" PowerLevel="250.0">
+      <MainAtt Amount="2.56" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="5" PowerLevel="500.0">
+      <MainAtt Amount="3.1" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+  </SUBSKILL-PC_ITEM_SOCO>
+  <SUBSKILL-PC_ITEM_MASCARA Delay="2.1" Animation="Explosion2" Sound="AttackDefault">
+    <DescriptionInfo Name="DES_PC_ITEM_MASCARA" Description="DES_PC_ITEM_MASCARA_DES" IconName="PC_ITEM_MASCARA" />
+    <ShortInfo TriggerIcon="TAG-TRIGGER_DO_ATTACK_MELEE" DamageIcon="TAG-DAMAGE_NORMAL_STUN" TargetIcon="TAG-TARGET_SINGLE_MELEE_ENEMY" AttackInfo="{SCRIPT:SI_StunDamage}" />
+    <Trigger Priority="0" RequiredToBeInFrontline="TRUE" RequiredToBeInBackline="FALSE">
+      <TriggerGroup Value="DoAttack" />
+      <TriggerScript ScriptName="" />
+    </Trigger>
+    <Targets>
+      <TargetScript ScriptName="Trg_MeleeTargeting" />
+      <TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random" />
+    </Targets>
+    <Activation ScriptName="Act_DamageAndStun" />
+    <ChallengeType Value="TypePhysical" />
+    <SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+      <MainAtt Amount="0.8" Tag="TAG-PERCEPTION" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="1" PowerLevel="10.0">
+      <MainAtt Amount="0.9" Tag="TAG-PERCEPTION" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="2" PowerLevel="30.0">
+      <MainAtt Amount="1.2" Tag="TAG-PERCEPTION" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="3" PowerLevel="90.0">
+      <MainAtt Amount="1.5" Tag="TAG-PERCEPTION" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="4" PowerLevel="250.0">
+      <MainAtt Amount="1.9" Tag="TAG-PERCEPTION" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="5" PowerLevel="500.0">
+      <MainAtt Amount="2.3" Tag="TAG-PERCEPTION" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+  </SUBSKILL-PC_ITEM_MASCARA>
+  <SUBSKILL-PC_ITEM_TRIPLAS Delay="4.1" Animation="Explosion2" Sound="AttackDefault">
+    <DescriptionInfo Name="DES_PC_ITEM_TRIPLAS" Description="DES_PC_ITEM_TRIPLAS_DES" IconName="PC_ITEM_TRIPLAS" />
+    <ShortInfo TriggerIcon="TAG-TRIGGER_DO_ATTACK_MELEE" DamageIcon="TAG-DAMAGE_NORMAL_STUN" TargetIcon="TAG-TARGET_SINGLE_MELEE_ENEMY" AttackInfo="{SCRIPT:SI_StunDamage}" />
+    <Trigger Priority="0" RequiredToBeInFrontline="TRUE" RequiredToBeInBackline="FALSE">
+      <TriggerGroup Value="DoAttack" />
+      <TriggerScript ScriptName="" />
+    </Trigger>
+    <Targets>
+      <TargetScript ScriptName="Trg_MeleeTargeting" />
+      <TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random" />
+    </Targets>
+    <Activation ScriptName="Act_DamageAndStun" />
+    <ChallengeType Value="TypePhysical" />
+    <SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+      <MainAtt Amount="1.24" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="1" PowerLevel="10.0">
+      <MainAtt Amount="1.4" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="2" PowerLevel="30.0">
+      <MainAtt Amount="1.86" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="3" PowerLevel="90.0">
+      <MainAtt Amount="2.33" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="4" PowerLevel="250.0">
+      <MainAtt Amount="2.94" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="5" PowerLevel="500.0">
+      <MainAtt Amount="3.56" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+  </SUBSKILL-PC_ITEM_TRIPLAS>
+  <SUBSKILL-PC_ITEM_DUPLAS Delay="2.4" Animation="Explosion2" Sound="AttackDefault">
+    <DescriptionInfo Name="DES_PC_ITEM_DUPLAS" Description="DES_PC_ITEM_DUPLAS_DES" IconName="PC_ITEM_DUPLAS" />
+    <ShortInfo TriggerIcon="TAG-TRIGGER_DO_ATTACK_MELEE" DamageIcon="TAG-DAMAGE_NORMAL_STUN" TargetIcon="TAG-TARGET_SINGLE_MELEE_ENEMY" AttackInfo="{SCRIPT:SI_StunDamage}" />
+    <Trigger Priority="0" RequiredToBeInFrontline="TRUE" RequiredToBeInBackline="FALSE">
+      <TriggerGroup Value="DoAttack" />
+      <TriggerScript ScriptName="" />
+    </Trigger>
+    <Targets>
+      <TargetScript ScriptName="Trg_MeleeTargeting" />
+      <TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random" />
+    </Targets>
+    <Activation ScriptName="Act_DamageAndStun" />
+    <ChallengeType Value="TypePhysical" />
+    <SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+      <MainAtt Amount="0.9" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="1" PowerLevel="10.0">
+      <MainAtt Amount="1.01" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="2" PowerLevel="30.0">
+      <MainAtt Amount="1.34" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="3" PowerLevel="90.0">
+      <MainAtt Amount="1.68" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="4" PowerLevel="250.0">
+      <MainAtt Amount="2.13" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="5" PowerLevel="500.0">
+      <MainAtt Amount="2.58" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+  </SUBSKILL-PC_ITEM_DUPLAS>
+  <SUBSKILL-PC_PESADELO Delay="2.5" Animation="Explosion2" Sound="AttackDefault">
+    <DescriptionInfo Name="DES_PC_ITEM_PESADELO" Description="DES_PC_ITEM_PESADELO_DES" IconName="PC_ITEM_PESADELO" />
+    <ShortInfo TriggerIcon="TAG-TRIGGER_DO_ATTACK_MELEE" DamageIcon="TAG-DAMAGE_NORMAL_STUN" TargetIcon="TAG-TARGET_SINGLE_MELEE_ENEMY" AttackInfo="{SCRIPT:SI_StunDamage}" />
+    <Trigger Priority="0" RequiredToBeInFrontline="TRUE" RequiredToBeInBackline="FALSE">
+      <TriggerGroup Value="DoAttack" />
+      <TriggerScript ScriptName="" />
+    </Trigger>
+    <Targets>
+      <TargetScript ScriptName="Trg_MeleeTargeting" />
+      <TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random" />
+    </Targets>
+    <Activation ScriptName="Act_DamageAndStun" />
+    <ChallengeType Value="TypePhysical" />
+    <SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+      <MainAtt Amount="0.8" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="2.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="1" PowerLevel="10.0">
+      <MainAtt Amount="0.9" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="2.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="2" PowerLevel="30.0">
+      <MainAtt Amount="1.2" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="2.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="3" PowerLevel="90.0">
+      <MainAtt Amount="1.5" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="2.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="4" PowerLevel="250.0">
+      <MainAtt Amount="1.9" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="2.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="5" PowerLevel="500.0">
+      <MainAtt Amount="2.3" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="2.0" />
+    </SubskillAttributesOnLevel>
+  </SUBSKILL-PC_PESADELO>
+  <SUBSKILL-PC_ITEM_FAIXAS Delay="2.3" Animation="Explosion2" Sound="AttackDefault">
+    <DescriptionInfo Name="DES_PC_ITEM_FAIXAS" Description="DES_PC_ITEM_FAIXAS_DES" IconName="PC_ITEM_FAIXAS" />
+    <ShortInfo TriggerIcon="TAG-TRIGGER_DO_ATTACK_MELEE" DamageIcon="TAG-DAMAGE_NORMAL_STUN" TargetIcon="TAG-TARGET_SINGLE_MELEE_ENEMY" AttackInfo="{SCRIPT:SI_StunDamage}" />
+    <Trigger Priority="0" RequiredToBeInFrontline="TRUE" RequiredToBeInBackline="FALSE">
+      <TriggerGroup Value="DoAttack" />
+      <TriggerScript ScriptName="" />
+    </Trigger>
+    <Targets>
+      <TargetScript ScriptName="Trg_MeleeTargeting" />
+      <TargetCountRange MinimumCount="1" MaximumCount="1" TargetIndication="Random" />
+    </Targets>
+    <Activation ScriptName="Act_DamageAndStun" />
+    <ChallengeType Value="TypePhysical" />
+    <SubskillAttributesOnLevel Level="0" PowerLevel="0.0">
+      <MainAtt Amount="0.56" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="1" PowerLevel="10.0">
+      <MainAtt Amount="0.63" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="2" PowerLevel="30.0">
+      <MainAtt Amount="0.84" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="3" PowerLevel="90.0">
+      <MainAtt Amount="1.05" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="4" PowerLevel="250.0">
+      <MainAtt Amount="1.33" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+    <SubskillAttributesOnLevel Level="5" PowerLevel="500.0">
+      <MainAtt Amount="1.61" Tag="TAG-CA_1" />
+      <SubskillAttribute Identifier="Stun" AttributeFloatValue="1.0" />
+    </SubskillAttributesOnLevel>
+  </SUBSKILL-PC_ITEM_FAIXAS>
 </SUBSKILLS_CHALLENGES>

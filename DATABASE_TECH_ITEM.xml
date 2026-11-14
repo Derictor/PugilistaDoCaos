@@ -1,0 +1,92 @@
+<ITEMS_TECH>
+  <ITEM_TECH-PC_LUVAS UpgradeCost="-2">
+    <DescriptionInfo Name="DES_PC_ITEM_LUVAS" Description="DES_PC_ITEM_LUVAS_DES" IconName="PC_ITEM_LUVAS" />
+    <UnlockRecipe UnlockPrimeRes="1" UnlockSecRes="1">
+      <ItemRecipe Value="ITEM_REC-PC_LUVAS" />
+    </UnlockRecipe>
+  </ITEM_TECH-PC_LUVAS>
+  <ITEM_TECH-PC_SOCO UpgradeCost="-2">
+    <DescriptionInfo Name="DES_PC_ITEM_SOCO" Description="DES_PC_ITEM_SOCO_DES" IconName="PC_ITEM_SOCO" />
+    <UnlockRecipe UnlockPrimeRes="1" UnlockSecRes="1">
+      <ItemRecipe Value="ITEM_REC-PC_SOCO" />
+    </UnlockRecipe>
+  </ITEM_TECH-PC_SOCO>
+  <ITEM_TECH-PC_MASCARA UpgradeCost="-2">
+    <DescriptionInfo Name="DES_PC_ITEM_MASCARA" Description="DES_PC_ITEM_MASCARA_DES" IconName="PC_ITEM_MASCARA" />
+    <UnlockRecipe UnlockPrimeRes="1" UnlockSecRes="1">
+      <ItemRecipe Value="ITEM_REC-PC_MASCARA" />
+    </UnlockRecipe>
+  </ITEM_TECH-PC_MASCARA>
+  <ITEM_TECH-PC_TRIPLAS UpgradeCost="-2">
+    <DescriptionInfo Name="DES_PC_ITEM_TRIPLAS" Description="DES_PC_ITEM_TRIPLAS_DES" IconName="PC_ITEM_TRIPLAS" />
+    <UnlockRecipe UnlockPrimeRes="1" UnlockSecRes="1">
+      <ItemRecipe Value="ITEM_REC-PC_TRIPLAS" />
+    </UnlockRecipe>
+  </ITEM_TECH-PC_TRIPLAS>
+  <ITEM_TECH-PC_DUPLAS UpgradeCost="-2">
+    <DescriptionInfo Name="DES_PC_ITEM_DUPLAS" Description="DES_PC_ITEM_DUPLAS_DES" IconName="PC_ITEM_DUPLAS" />
+    <UnlockRecipe UnlockPrimeRes="1" UnlockSecRes="1">
+      <ItemRecipe Value="ITEM_REC-PC_DUPLAS" />
+    </UnlockRecipe>
+  </ITEM_TECH-PC_DUPLAS>
+  <ITEM_TECH-PC_KIMONO UpgradeCost="-2">
+    <DescriptionInfo Name="DES_PC_ITEM_KIMONO" Description="DES_PC_ITEM_KIMONO_DES" IconName="PC_ITEM_KIMONO" />
+    <UnlockRecipe UnlockPrimeRes="1" UnlockSecRes="1">
+      <ItemRecipe Value="ITEM_REC-PC_KIMONO" />
+    </UnlockRecipe>
+  </ITEM_TECH-PC_KIMONO>
+  <ITEM_TECH-PC_REFORCADO UpgradeCost="-2">
+    <DescriptionInfo Name="DES_PC_ITEM_REFORCADO" Description="DES_PC_ITEM_REFORCADO_DES" IconName="PC_ITEM_REFORCADO" />
+    <UnlockRecipe UnlockPrimeRes="1" UnlockSecRes="1">
+      <ItemRecipe Value="ITEM_REC-PC_REFORCADO" />
+    </UnlockRecipe>
+  </ITEM_TECH-PC_REFORCADO>
+  <ITEM_TECH-PC_ARNES UpgradeCost="1">
+    <DescriptionInfo Name="DES_PC_ITEM_ARNES" Description="DES_PC_ITEM_ARNES_DES" IconName="PC_ITEM_ARNES" />
+    <UnlockRecipe UnlockPrimeRes="1" UnlockSecRes="1">
+      <ItemRecipe Value="ITEM_REC-PC_ARNES" />
+    </UnlockRecipe>
+  </ITEM_TECH-PC_ARNES>
+  <ITEM_TECH-SHIELDS UpgradeCost="1">
+    <DescriptionInfo Name="DES_TECH_SHIELDS" Description="DES_TECH_SHIELDS_DES" IconName="RecipeShields" />
+    <UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+      <ItemRecipe Value="ITEM_REC-SHIELD" />
+    </UnlockRecipe>
+    <UnlockRecipe UnlockPrimeRes="1" UnlockSecRes="1">
+      <ItemRecipe Value="ITEM_REC-PC_LUVAS" />
+    </UnlockRecipe>
+    <UnlockRecipe UnlockPrimeRes="1" UnlockSecRes="1">
+      <ItemRecipe Value="ITEM_REC-PC_SOCO" />
+    </UnlockRecipe>
+    <UnlockRecipe UnlockPrimeRes="1" UnlockSecRes="1">
+      <ItemRecipe Value="ITEM_REC-PC_TRIPLAS" />
+    </UnlockRecipe>
+    <UnlockRecipe UnlockPrimeRes="1" UnlockSecRes="1">
+      <ItemRecipe Value="ITEM_REC-PC_DUPLAS" />
+    </UnlockRecipe>
+  </ITEM_TECH-SHIELDS>
+  <ITEM_TECH-ARMOURS UpgradeCost="1">
+    <DescriptionInfo Name="DES_TECH_ARMOURS" Description="DES_TECH_ARMOURS_DES" IconName="RecipeArmours" />
+    <UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+      <ItemRecipe Value="ITEM_REC-ROBES" />
+    </UnlockRecipe>
+    <UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+      <ItemRecipe Value="ITEM_REC-MEDIUM_ARMOUR" />
+    </UnlockRecipe>
+    <UnlockRecipe UnlockPrimeRes="2" UnlockSecRes="2">
+      <ItemRecipe Value="ITEM_REC-HEAVY_ARMOUR" />
+    </UnlockRecipe>
+    <UnlockRecipe UnlockPrimeRes="1" UnlockSecRes="1">
+      <ItemRecipe Value="ITEM_REC-PC_CABECA" />
+    </UnlockRecipe>
+    <UnlockRecipe UnlockPrimeRes="1" UnlockSecRes="1">
+      <ItemRecipe Value="ITEM_REC-PC_CALCAS" />
+    </UnlockRecipe>
+    <UnlockRecipe UnlockPrimeRes="1" UnlockSecRes="1">
+      <ItemRecipe Value="ITEM_REC-PC_KIMONO" />
+    </UnlockRecipe>
+    <UnlockRecipe UnlockPrimeRes="1" UnlockSecRes="1">
+      <ItemRecipe Value="ITEM_REC-PC_REFORCADO" />
+    </UnlockRecipe>
+  </ITEM_TECH-ARMOURS>
+</ITEMS_TECH>

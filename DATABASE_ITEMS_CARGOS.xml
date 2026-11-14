@@ -1,0 +1,86 @@
+<ITEMS_CARGOS>
+  <ITEM_CARGO-PC_LUVAS TrashChance="0" MasterChance="0">
+    <ResourceRarityRange MinimumCount="0" MaximumCount="100" />
+    <SkillRarityRange MinimumCount="0" MaximumCount="100" />
+    <LevelRange MinimumCount="1" MaximumCount="1" />
+    <NumberOfItems MinimumCount="1" MaximumCount="1" />
+    <RequiredTag Value="TAG-PC_ITEM_LUVAS" />
+  </ITEM_CARGO-PC_LUVAS>
+  <ITEM_CARGO-PC_SOCO TrashChance="0" MasterChance="0">
+    <ResourceRarityRange MinimumCount="0" MaximumCount="100" />
+    <SkillRarityRange MinimumCount="0" MaximumCount="100" />
+    <LevelRange MinimumCount="1" MaximumCount="1" />
+    <NumberOfItems MinimumCount="1" MaximumCount="1" />
+    <RequiredTag Value="TAG-PC_ITEM_SOCO" />
+  </ITEM_CARGO-PC_SOCO>
+  <ITEM_CARGO-PC_MASCARA TrashChance="0" MasterChance="0">
+    <ResourceRarityRange MinimumCount="0" MaximumCount="100" />
+    <SkillRarityRange MinimumCount="0" MaximumCount="100" />
+    <LevelRange MinimumCount="1" MaximumCount="1" />
+    <NumberOfItems MinimumCount="1" MaximumCount="1" />
+    <RequiredTag Value="TAG-PC_ITEM_MASCARA" />
+  </ITEM_CARGO-PC_MASCARA>
+  <ITEM_CARGO-PC_TRIPLAS TrashChance="0" MasterChance="0">
+    <ResourceRarityRange MinimumCount="0" MaximumCount="100" />
+    <SkillRarityRange MinimumCount="0" MaximumCount="100" />
+    <LevelRange MinimumCount="1" MaximumCount="1" />
+    <NumberOfItems MinimumCount="1" MaximumCount="1" />
+    <RequiredTag Value="TAG-PC_ITEM_TRIPLAS" />
+  </ITEM_CARGO-PC_TRIPLAS>
+  <ITEM_CARGO-PC_DUPLAS TrashChance="0" MasterChance="0">
+    <ResourceRarityRange MinimumCount="0" MaximumCount="100" />
+    <SkillRarityRange MinimumCount="0" MaximumCount="100" />
+    <LevelRange MinimumCount="1" MaximumCount="1" />
+    <NumberOfItems MinimumCount="1" MaximumCount="1" />
+    <RequiredTag Value="TAG-PC_ITEM_DUPLAS" />
+  </ITEM_CARGO-PC_DUPLAS>
+  <ITEM_CARGO-PC_PESADELO TrashChance="0" MasterChance="0">
+    <ResourceRarityRange MinimumCount="0" MaximumCount="100" />
+    <SkillRarityRange MinimumCount="0" MaximumCount="100" />
+    <LevelRange MinimumCount="1" MaximumCount="1" />
+    <NumberOfItems MinimumCount="1" MaximumCount="1" />
+    <RequiredTag Value="TAG-PC_ITEM_PESADELO" />
+  </ITEM_CARGO-PC_PESADELO>
+  <ITEM_CARGO-PC_FAIXAS TrashChance="0" MasterChance="0">
+    <ResourceRarityRange MinimumCount="0" MaximumCount="100" />
+    <SkillRarityRange MinimumCount="0" MaximumCount="100" />
+    <LevelRange MinimumCount="1" MaximumCount="1" />
+    <NumberOfItems MinimumCount="1" MaximumCount="1" />
+    <RequiredTag Value="TAG-PC_ITEM_FAIXAS" />
+  </ITEM_CARGO-PC_FAIXAS>
+  <ITEM_CARGO-PC_CABECA TrashChance="0" MasterChance="0">
+    <ResourceRarityRange MinimumCount="0" MaximumCount="100" />
+    <SkillRarityRange MinimumCount="0" MaximumCount="100" />
+    <LevelRange MinimumCount="1" MaximumCount="1" />
+    <NumberOfItems MinimumCount="1" MaximumCount="1" />
+    <RequiredTag Value="TAG-PC_ITEM_CABECA" />
+  </ITEM_CARGO-PC_CABECA>
+  <ITEM_CARGO-PC_CALCAS TrashChance="0" MasterChance="0">
+    <ResourceRarityRange MinimumCount="0" MaximumCount="100" />
+    <SkillRarityRange MinimumCount="0" MaximumCount="100" />
+    <LevelRange MinimumCount="1" MaximumCount="1" />
+    <NumberOfItems MinimumCount="1" MaximumCount="1" />
+    <RequiredTag Value="TAG-PC_ITEM_CALCAS" />
+  </ITEM_CARGO-PC_CALCAS>
+  <ITEM_CARGO-PC_KIMONO TrashChance="0" MasterChance="0">
+    <ResourceRarityRange MinimumCount="0" MaximumCount="100" />
+    <SkillRarityRange MinimumCount="0" MaximumCount="100" />
+    <LevelRange MinimumCount="1" MaximumCount="1" />
+    <NumberOfItems MinimumCount="1" MaximumCount="1" />
+    <RequiredTag Value="TAG-PC_ITEM_KIMONO" />
+  </ITEM_CARGO-PC_KIMONO>
+  <ITEM_CARGO-PC_REFORCADO TrashChance="0" MasterChance="0">
+    <ResourceRarityRange MinimumCount="0" MaximumCount="100" />
+    <SkillRarityRange MinimumCount="0" MaximumCount="100" />
+    <LevelRange MinimumCount="1" MaximumCount="1" />
+    <NumberOfItems MinimumCount="1" MaximumCount="1" />
+    <RequiredTag Value="TAG-PC_ITEM_REFORCADO" />
+  </ITEM_CARGO-PC_REFORCADO>
+  <ITEM_CARGO-PC_ARNES TrashChance="0" MasterChance="0">
+    <ResourceRarityRange MinimumCount="0" MaximumCount="100" />
+    <SkillRarityRange MinimumCount="0" MaximumCount="100" />
+    <LevelRange MinimumCount="1" MaximumCount="1" />
+    <NumberOfItems MinimumCount="1" MaximumCount="1" />
+    <RequiredTag Value="TAG-PC_ITEM_ARNES" />
+  </ITEM_CARGO-PC_ARNES>
+</ITEMS_CARGOS>

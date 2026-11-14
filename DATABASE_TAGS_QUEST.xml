@@ -1,0 +1,65 @@
+<TAGS_QUEST>
+  <TAG-PC_ITEM_LUVAS Visible="FALSE" UseCount="TRUE">
+    <DescriptionInfo Name="DES_PC_ITEM_LUVAS" Description="DES_PC_ITEM_LUVAS_DES" IconName="PC_ITEM_LUVAS" />
+    <TagType Value="ItemType" />
+    <Parent Value="TAG-MELEE_WEAPON" />
+  </TAG-PC_ITEM_LUVAS>
+  <TAG-PC_ITEM_SOCO Visible="FALSE" UseCount="TRUE">
+    <DescriptionInfo Name="DES_PC_ITEM_SOCO" Description="DES_PC_ITEM_SOCO_DES" IconName="PC_ITEM_SOCO" />
+    <TagType Value="ItemType" />
+    <Parent Value="TAG-MELEE_WEAPON" />
+  </TAG-PC_ITEM_SOCO>
+  <TAG-PC_ITEM_MASCARA Visible="FALSE" UseCount="TRUE">
+    <DescriptionInfo Name="DES_PC_ITEM_MASCARA" Description="DES_PC_ITEM_MASCARA_DES" IconName="PC_ITEM_MASCARA" />
+    <TagType Value="ItemType" />
+    <Parent Value="TAG-MELEE_WEAPON" />
+  </TAG-PC_ITEM_MASCARA>
+  <TAG-PC_ITEM_TRIPLAS Visible="FALSE" UseCount="TRUE">
+    <DescriptionInfo Name="DES_PC_ITEM_TRIPLAS" Description="DES_PC_ITEM_TRIPLAS_DES" IconName="PC_ITEM_TRIPLAS" />
+    <TagType Value="ItemType" />
+    <Parent Value="TAG-MELEE_WEAPON" />
+  </TAG-PC_ITEM_TRIPLAS>
+  <TAG-PC_ITEM_DUPLAS Visible="FALSE" UseCount="TRUE">
+    <DescriptionInfo Name="DES_PC_ITEM_DUPLAS" Description="DES_PC_ITEM_DUPLAS_DES" IconName="PC_ITEM_DUPLAS" />
+    <TagType Value="ItemType" />
+    <Parent Value="TAG-MELEE_WEAPON" />
+  </TAG-PC_ITEM_DUPLAS>
+  <TAG-PC_ITEM_PESADELO Visible="FALSE" UseCount="TRUE">
+    <DescriptionInfo Name="DES_PC_ITEM_PESADELO" Description="DES_PC_ITEM_PESADELO_DES" IconName="PC_ITEM_PESADELO" />
+    <TagType Value="ItemType" />
+    <Parent Value="TAG-MELEE_WEAPON" />
+  </TAG-PC_ITEM_PESADELO>
+  <TAG-PC_ITEM_FAIXAS Visible="FALSE" UseCount="TRUE">
+    <DescriptionInfo Name="DES_PC_ITEM_FAIXAS" Description="DES_PC_ITEM_FAIXAS_DES" IconName="PC_ITEM_FAIXAS" />
+    <TagType Value="ItemType" />
+    <Parent Value="TAG-MELEE_WEAPON" />
+  </TAG-PC_ITEM_FAIXAS>
+  <TAG-PC_ITEM_CABECA Visible="FALSE" UseCount="TRUE">
+    <DescriptionInfo Name="DES_PC_ITEM_CABECA" Description="DES_PC_ITEM_CABECA_DES" IconName="PC_ITEM_CABECA" />
+    <TagType Value="ItemType" />
+    <Parent Value="TAG-JEWELLERY" />
+  </TAG-PC_ITEM_CABECA>
+  <TAG-PC_ITEM_CALCAS Visible="FALSE" UseCount="TRUE">
+    <DescriptionInfo Name="DES_PC_ITEM_CALCAS" Description="DES_PC_ITEM_CALCAS_DES" IconName="PC_ITEM_CALCAS" />
+    <TagType Value="ItemType" />
+    <Parent Value="TAG-ARMOUR" />
+  </TAG-PC_ITEM_CALCAS>
+  <TAG-PC_ITEM_KIMONO Visible="FALSE" UseCount="TRUE">
+    <DescriptionInfo Name="DES_PC_ITEM_KIMONO" Description="DES_PC_ITEM_KIMONO_DES" IconName="PC_ITEM_KIMONO" />
+    <TagType Value="ItemType" />
+    <Parent Value="TAG-ARMOUR" />
+  </TAG-PC_ITEM_KIMONO>
+  <TAG-PC_ITEM_REFORCADO Visible="FALSE" UseCount="TRUE">
+    <DescriptionInfo Name="DES_PC_ITEM_REFORCADO" Description="DES_PC_ITEM_REFORCADO_DES" IconName="PC_ITEM_REFORCADO" />
+    <TagType Value="ItemType" />
+    <Parent Value="TAG-ARMOUR" />
+  </TAG-PC_ITEM_REFORCADO>
+  <TAG-PC_ITEM_ARNES Visible="FALSE" UseCount="TRUE">
+    <DescriptionInfo Name="DES_PC_ITEM_ARNES" Description="DES_PC_ITEM_ARNES_DES" IconName="PC_ITEM_ARNES" />
+    <TagType Value="ItemType" />
+    <Parent Value="TAG-TOOLS" />
+  </TAG-PC_ITEM_ARNES>
+  <TAG-PC_UNIQUE_RECRUITED Visible="FALSE" UseCount="TRUE">
+    <TagType Value="WorldType" />
+  </TAG-PC_UNIQUE_RECRUITED>
+</TAGS_QUEST>

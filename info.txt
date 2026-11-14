@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <ModInfo Name="Pugilista do Caos" Graphic="PC_Helden.png" Visibility="2">
-  <IMAGE Name="PC_Helden" Path="PC_Helden.png" MemoryStorage="true" TagMode="false" EventImage="false" Model="HumanWarriorM01" />
-  <IMAGE Name="PC_Recrutamento" Path="PC_Recrutamento.png" MemoryStorage="false" TagMode="false" EventImage="true" />
-  <IMAGE Name="PC_Treino" Path="PC_Treino.png" MemoryStorage="false" TagMode="false" EventImage="true" />
+  <IMAGE Name="PC_Helden" Path="Images/Interface/Cards/PC_Helden.jpg" MemoryStorage="true" TagMode="false" EventImage="false" Model="HumanWarriorM01" Path2="Images/Interface/Roster/PC_Helden.png" />
+  <IMAGE Name="PC_Recrutamento" Path="Images/Interface/Events/PC_Recrutamento.jpg" MemoryStorage="false" TagMode="false" EventImage="true" />
+  <IMAGE Name="PC_Treino" Path="Images/Interface/Events/PC_Treino.jpg" MemoryStorage="false" TagMode="false" EventImage="true" />
   <IMAGE Name="PC_classe_punho" Path="PC_classe_punho.png" MemoryStorage="true" TagMode="false" EventImage="false" />
   <IMAGE Name="PC_golpe_de_encontro" Path="PC_golpe_de_encontro.png" MemoryStorage="true" TagMode="false" EventImage="false" />
   <IMAGE Name="PC_animo_inabalavel" Path="PC_animo_inabalavel.png" MemoryStorage="true" TagMode="false" EventImage="false" />
@@ -11,7 +11,30 @@
   <DB>DATABASE_SKILLS_PACKS.xml</DB>
   <DB>DATABASE_SKILLS_1_NATURAL.xml</DB>
   <DB>DATABASE_SUBSKILLS_CHALLENGES_OFFENCE.xml</DB>
-  <DB>DATABASE_DES_LOCALIZATION.xml</DB>
+  <DB>DATABASE_DES_LOCALIZATION_PC.xml</DB>
+  <IMAGE Name="PC_FOLEGO" Path="PC_FOLEGO.png" MemoryStorage="true" TagMode="false" EventImage="false" />
+  <IMAGE Name="PC_ESTOPIM" Path="PC_ESTOPIM.png" MemoryStorage="true" TagMode="false" EventImage="false" />
+  <IMAGE Name="PC_ITEM_LUVAS" Path="PC_ITEM_LUVAS.png" MemoryStorage="true" TagMode="false" EventImage="false" />
+  <IMAGE Name="PC_ITEM_SOCO" Path="PC_ITEM_SOCO.png" MemoryStorage="true" TagMode="false" EventImage="false" />
+  <IMAGE Name="PC_ITEM_MASCARA" Path="PC_ITEM_MASCARA.png" MemoryStorage="true" TagMode="false" EventImage="false" />
+  <IMAGE Name="PC_ITEM_TRIPLAS" Path="PC_ITEM_TRIPLAS.png" MemoryStorage="true" TagMode="false" EventImage="false" />
+  <IMAGE Name="PC_ITEM_DUPLAS" Path="PC_ITEM_DUPLAS.png" MemoryStorage="true" TagMode="false" EventImage="false" />
+  <IMAGE Name="PC_ITEM_PESADELO" Path="PC_ITEM_PESADELO.png" MemoryStorage="true" TagMode="false" EventImage="false" />
+  <IMAGE Name="PC_ITEM_FAIXAS" Path="PC_ITEM_FAIXAS.png" MemoryStorage="true" TagMode="false" EventImage="false" />
+  <IMAGE Name="PC_ITEM_CABECA" Path="PC_ITEM_CABECA.png" MemoryStorage="true" TagMode="false" EventImage="false" />
+  <IMAGE Name="PC_ITEM_CALCAS" Path="PC_ITEM_CALCAS.png" MemoryStorage="true" TagMode="false" EventImage="false" />
+  <IMAGE Name="PC_ITEM_KIMONO" Path="PC_ITEM_KIMONO.png" MemoryStorage="true" TagMode="false" EventImage="false" />
+  <IMAGE Name="PC_ITEM_REFORCADO" Path="PC_ITEM_REFORCADO.png" MemoryStorage="true" TagMode="false" EventImage="false" />
+  <IMAGE Name="PC_ITEM_ARNES" Path="PC_ITEM_ARNES.png" MemoryStorage="true" TagMode="false" EventImage="false" />
+  <DB>DATABASE_SUBSKILLS_CHALLENGES_DEFENCE.xml</DB>
+  <DB>DATABASE_SUBSKILLS_CHALLENGES_SUPPORT.xml</DB>
+  <DB>DATABASE_RECIPES_ITEMS.xml</DB>
+  <DB>DATABASE_ITEMS_CARGOS.xml</DB>
+  <DB>DATABASE_TAGS_QUEST.xml</DB>
+  <DB>DATABASE_TECH_ITEM.xml</DB>
+  <IMAGE Name="PC_Halloween" Path="Images/Interface/Events/PC_Halloween.jpg" MemoryStorage="false" TagMode="false" EventImage="true" />
+  <IMAGE Name="PC_Duelista" Path="Images/Interface/Events/PC_Duelista.jpg" MemoryStorage="false" TagMode="false" EventImage="true" />
   <STORY_MODULE>PC_EscolaDeHelden.xml</STORY_MODULE>
   <TAG>Characters</TAG>
+  <SCRIPT>PC_UniqueRecruitment.cs</SCRIPT>
 </ModInfo>

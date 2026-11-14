@@ -2,6 +2,8 @@
   <SKILL_PACK-PC_PUGILISTA>
     <RarityRange MinimumCount="0" MaximumCount="100" />
     <GuarantedSkill Value="SKILL-PC_GOLPE" />
+    <GuarantedSkill Value="SKILL-PC_ESTOPIM" />
+    <GuarantedSkill Value="SKILL-PC_FOLEGO" />
     <SkillGroupFilters>
       <SkillGroupSingleFilter Name="Fallback" Requirement="NecessaryType" />
     </SkillGroupFilters>
@@ -9,9 +11,59 @@
   <SKILL_PACK-PC_HELDEN>
     <RarityRange MinimumCount="0" MaximumCount="100" />
     <GuarantedSkill Value="SKILL-PC_GOLPE" />
+    <GuarantedSkill Value="SKILL-PC_ESTOPIM" />
+    <GuarantedSkill Value="SKILL-PC_FOLEGO" />
     <GuarantedSkill Value="SKILL-PC_ANIMO" />
     <SkillGroupFilters>
       <SkillGroupSingleFilter Name="Fallback" Requirement="NecessaryType" />
     </SkillGroupFilters>
   </SKILL_PACK-PC_HELDEN>
+  <SKILL_PACK-PC_ITEM_LUVAS>
+    <RarityRange MinimumCount="0" MaximumCount="0" />
+    <GuarantedSkill Value="SKILL-PC_ITEM_LUVAS" />
+  </SKILL_PACK-PC_ITEM_LUVAS>
+  <SKILL_PACK-PC_ITEM_SOCO>
+    <RarityRange MinimumCount="0" MaximumCount="0" />
+    <GuarantedSkill Value="SKILL-PC_ITEM_SOCO" />
+  </SKILL_PACK-PC_ITEM_SOCO>
+  <SKILL_PACK-PC_ITEM_MASCARA>
+    <RarityRange MinimumCount="0" MaximumCount="0" />
+    <GuarantedSkill Value="SKILL-PC_ITEM_MASCARA" />
+  </SKILL_PACK-PC_ITEM_MASCARA>
+  <SKILL_PACK-PC_ITEM_TRIPLAS>
+    <RarityRange MinimumCount="0" MaximumCount="0" />
+    <GuarantedSkill Value="SKILL-PC_ITEM_TRIPLAS" />
+  </SKILL_PACK-PC_ITEM_TRIPLAS>
+  <SKILL_PACK-PC_ITEM_DUPLAS>
+    <RarityRange MinimumCount="0" MaximumCount="0" />
+    <GuarantedSkill Value="SKILL-PC_ITEM_DUPLAS" />
+  </SKILL_PACK-PC_ITEM_DUPLAS>
+  <SKILL_PACK-PC_ITEM_PESADELO>
+    <RarityRange MinimumCount="0" MaximumCount="0" />
+    <GuarantedSkill Value="SKILL-PC_ITEM_PESADELO" />
+  </SKILL_PACK-PC_ITEM_PESADELO>
+  <SKILL_PACK-PC_ITEM_FAIXAS>
+    <RarityRange MinimumCount="0" MaximumCount="0" />
+    <GuarantedSkill Value="SKILL-PC_ITEM_FAIXAS" />
+  </SKILL_PACK-PC_ITEM_FAIXAS>
+  <SKILL_PACK-PC_ITEM_CABECA>
+    <RarityRange MinimumCount="0" MaximumCount="0" />
+    <GuarantedSkill Value="SKILL-PC_ITEM_CABECA" />
+  </SKILL_PACK-PC_ITEM_CABECA>
+  <SKILL_PACK-PC_ITEM_CALCAS>
+    <RarityRange MinimumCount="0" MaximumCount="0" />
+    <GuarantedSkill Value="SKILL-PC_ITEM_CALCAS" />
+  </SKILL_PACK-PC_ITEM_CALCAS>
+  <SKILL_PACK-PC_ITEM_KIMONO>
+    <RarityRange MinimumCount="0" MaximumCount="0" />
+    <GuarantedSkill Value="SKILL-PC_ITEM_KIMONO" />
+  </SKILL_PACK-PC_ITEM_KIMONO>
+  <SKILL_PACK-PC_ITEM_REFORCADO>
+    <RarityRange MinimumCount="0" MaximumCount="0" />
+    <GuarantedSkill Value="SKILL-PC_ITEM_REFORCADO" />
+  </SKILL_PACK-PC_ITEM_REFORCADO>
+  <SKILL_PACK-PC_ITEM_ARNES>
+    <RarityRange MinimumCount="0" MaximumCount="0" />
+    <GuarantedSkill Value="SKILL-PC_ITEM_ARNES" />
+  </SKILL_PACK-PC_ITEM_ARNES>
 </SKILLS_PACKS>

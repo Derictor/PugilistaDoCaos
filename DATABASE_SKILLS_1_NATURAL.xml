@@ -12,4 +12,75 @@
     <SkillGroupFilter Value="ClassZerca" />
     <SkillGroupFilter Value="AdvBuffGiver" />
   </SKILL-PC_ANIMO>
+  <SKILL-PC_FOLEGO Rarity="0">
+    <DescriptionInfo Name="DES_PC_FOLEGO" Description="DES_PC_FOLEGO_DES" IconName="PC_FOLEGO" />
+    <BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY" />
+    <SkillSubskill Value="SUBSKILL-PC_GUARDA" />
+    <SkillSubskill Value="SUBSKILL-PC_FOLEGO" />
+  </SKILL-PC_FOLEGO>
+  <SKILL-PC_ESTOPIM Rarity="0">
+    <DescriptionInfo Name="DES_PC_ESTOPIM" Description="DES_PC_ESTOPIM_DES" IconName="PC_ESTOPIM" />
+    <BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY" />
+    <SkillSubskill Value="SUBSKILL-PC_ESTOPIM" />
+  </SKILL-PC_ESTOPIM>
+  <SKILL-PC_ITEM_LUVAS Rarity="0">
+    <DescriptionInfo Name="DES_PC_ITEM_LUVAS" Description="DES_PC_ITEM_LUVAS_DES" IconName="PC_ITEM_LUVAS" />
+    <BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY" />
+    <SkillSubskill Value="SUBSKILL-PC_ITEM_LUVAS" />
+  </SKILL-PC_ITEM_LUVAS>
+  <SKILL-PC_ITEM_SOCO Rarity="0">
+    <DescriptionInfo Name="DES_PC_ITEM_SOCO" Description="DES_PC_ITEM_SOCO_DES" IconName="PC_ITEM_SOCO" />
+    <BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY" />
+    <SkillSubskill Value="SUBSKILL-PC_ITEM_SOCO" />
+  </SKILL-PC_ITEM_SOCO>
+  <SKILL-PC_ITEM_MASCARA Rarity="0">
+    <DescriptionInfo Name="DES_PC_ITEM_MASCARA" Description="DES_PC_ITEM_MASCARA_DES" IconName="PC_ITEM_MASCARA" />
+    <BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY" />
+    <SkillSubskill Value="SUBSKILL-PC_ITEM_MASCARA" />
+  </SKILL-PC_ITEM_MASCARA>
+  <SKILL-PC_ITEM_TRIPLAS Rarity="0">
+    <DescriptionInfo Name="DES_PC_ITEM_TRIPLAS" Description="DES_PC_ITEM_TRIPLAS_DES" IconName="PC_ITEM_TRIPLAS" />
+    <BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY" />
+    <SkillSubskill Value="SUBSKILL-PC_ITEM_TRIPLAS" />
+  </SKILL-PC_ITEM_TRIPLAS>
+  <SKILL-PC_ITEM_DUPLAS Rarity="0">
+    <DescriptionInfo Name="DES_PC_ITEM_DUPLAS" Description="DES_PC_ITEM_DUPLAS_DES" IconName="PC_ITEM_DUPLAS" />
+    <BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY" />
+    <SkillSubskill Value="SUBSKILL-PC_ITEM_DUPLAS" />
+  </SKILL-PC_ITEM_DUPLAS>
+  <SKILL-PC_ITEM_PESADELO Rarity="0">
+    <DescriptionInfo Name="DES_PC_ITEM_PESADELO" Description="DES_PC_ITEM_PESADELO_DES" IconName="PC_ITEM_PESADELO" />
+    <BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY" />
+    <SkillSubskill Value="SUBSKILL-PC_PESADELO" />
+  </SKILL-PC_ITEM_PESADELO>
+  <SKILL-PC_ITEM_FAIXAS Rarity="0">
+    <DescriptionInfo Name="DES_PC_ITEM_FAIXAS" Description="DES_PC_ITEM_FAIXAS_DES" IconName="PC_ITEM_FAIXAS" />
+    <BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY" />
+    <SkillSubskill Value="SUBSKILL-PC_ITEM_FAIXAS" />
+  </SKILL-PC_ITEM_FAIXAS>
+  <SKILL-PC_ITEM_CABECA Rarity="0">
+    <DescriptionInfo Name="DES_PC_ITEM_CABECA" Description="DES_PC_ITEM_CABECA_DES" IconName="PC_ITEM_CABECA" />
+    <BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY" />
+    <SkillSubskill Value="SUBSKILL-PC_ITEM_CABECA" />
+  </SKILL-PC_ITEM_CABECA>
+  <SKILL-PC_ITEM_CALCAS Rarity="0">
+    <DescriptionInfo Name="DES_PC_ITEM_CALCAS" Description="DES_PC_ITEM_CALCAS_DES" IconName="PC_ITEM_CALCAS" />
+    <BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY" />
+    <SkillSubskill Value="SUBSKILL-PC_ITEM_CALCAS" />
+  </SKILL-PC_ITEM_CALCAS>
+  <SKILL-PC_ITEM_KIMONO Rarity="0">
+    <DescriptionInfo Name="DES_PC_ITEM_KIMONO" Description="DES_PC_ITEM_KIMONO_DES" IconName="PC_ITEM_KIMONO" />
+    <BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY" />
+    <SkillSubskill Value="SUBSKILL-PC_ITEM_KIMONO" />
+  </SKILL-PC_ITEM_KIMONO>
+  <SKILL-PC_ITEM_REFORCADO Rarity="0">
+    <DescriptionInfo Name="DES_PC_ITEM_REFORCADO" Description="DES_PC_ITEM_REFORCADO_DES" IconName="PC_ITEM_REFORCADO" />
+    <BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY" />
+    <SkillSubskill Value="SUBSKILL-PC_ITEM_REFORCADO" />
+  </SKILL-PC_ITEM_REFORCADO>
+  <SKILL-PC_ITEM_ARNES Rarity="0">
+    <DescriptionInfo Name="DES_PC_ITEM_ARNES" Description="DES_PC_ITEM_ARNES_DES" IconName="PC_ITEM_ARNES" />
+    <BaseEssence Amount="5" Tag="TAG-ESSENCE_GRAY" />
+    <SkillSubskill Value="SUBSKILL-PC_ITEM_ARNES" />
+  </SKILL-PC_ITEM_ARNES>
 </SKILLS_1_NATURAL>

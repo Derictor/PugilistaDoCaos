@@ -26,5 +26,456 @@
       <CountedTag Amount="1" Tag="TAG-GENDER_MALE" />
     </CommonSubraceAttributes>
     <GraphicMale Value="PC_Helden" />
+    <DefaultCargo Chance="100" ItemCargo="ITEM_CARGO-PC_LUVAS" />
   </SUBRACE-PC_HELDEN>
+  <SUBRACE-PC_PUGILISTA_HUM>
+    <DescriptionInfo Name="DES_PC_PUGILISTA" Description="DES_PC_PUGILISTA_DES" IconName="PC_classe_punho" />
+    <Race Value="RACE-HUMAN" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-HUMANOID" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-WARRIOR" />
+    <MainSubraceAttributes Amount="5" Tag="TAG-WITS" />
+    <MainSubraceAttributes Amount="7" Tag="TAG-STRENGTH" />
+    <MainSubraceAttributes Amount="4" Tag="TAG-PERCEPTION" />
+    <MainSubraceAttributes Amount="4" Tag="TAG-INTELLIGENCE" />
+    <MainSubraceAttributes Amount="2" Tag="TAG-WISDOM" />
+    <MainSubraceAttributes Amount="2" Tag="TAG-MYSTICISM" />
+    <MainSubraceAttributes Amount="3" Tag="TAG-DESTINY" />
+    <SecondSubraceAttributes Amount="15" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    <SecondSubraceAttributes Amount="15" Tag="TAG-MAX_HEALTH_MENTAL" />
+    <SecondSubraceAttributes Amount="15" Tag="TAG-MAX_HEALTH_SPIRIT" />
+    <SecondSubraceAttributes Amount="5" Tag="TAG-MOVEMENT_RANGE" />
+    <SecondSubraceAttributes Amount="2" Tag="TAG-RANGE_OF_SIGHT_DAY" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-RANGE_OF_SIGHT_NIGHT" />
+    <SecondSubraceAttributes Amount="10" Tag="TAG-MORALE" />
+    <SecondSubraceAttributes Amount="250" Tag="TAG-PERSONAL_CARRY_LIMIT" />
+    <CommonSubraceAttributes Chance="50">
+      <CountedTag Amount="1" Tag="TAG-GENDER_FEMALE" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="5">
+      <CountedTag Amount="1" Tag="TAG-CREEPY" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="15">
+      <CountedTag Amount="1" Tag="TAG-ATTRACTIVE" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="5">
+      <CountedTag Amount="1" Tag="TAG-BEAUTIFUL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="80">
+      <CountedTag Amount="3" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="50">
+      <CountedTag Amount="3" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="30">
+      <CountedTag Amount="2" Tag="TAG-MAX_HEALTH_MENTAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="30">
+      <CountedTag Amount="2" Tag="TAG-MAX_HEALTH_SPIRIT" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="50">
+      <CountedTag Amount="1" Tag="TAG-WISDOM" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="50">
+      <CountedTag Amount="1" Tag="TAG-STRENGTH" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="50">
+      <CountedTag Amount="1" Tag="TAG-MYSTICISM" />
+    </CommonSubraceAttributes>
+    <NaturalSkills Value="SKILL_PACK-RACE_HUM" />
+    <AdvancementSkills Value="SKILL_PACK-WARRIOR" />
+    <GraphicMale Value="HumanWarriorM01" />
+    <GraphicMale Value="HumanWarriorM02" />
+    <GraphicMale Value="HumanWarriorM03" />
+    <GraphicMale Value="HumanWarriorM04" />
+    <GraphicMale Value="HumanWarriorM05" />
+    <GraphicMale Value="HumanWarriorM06" />
+    <GraphicMale Value="HumanWarriorM07" />
+    <GraphicMale Value="HumanWarriorM08" />
+    <GraphicMale Value="HumanWarriorM09" />
+    <GraphicMale Value="HumanWarriorM10" />
+    <GraphicMale Value="HumanWarriorM11" />
+    <GraphicMale Value="HumanWarriorM12" />
+    <GraphicMale Value="HumanWarriorM13" />
+    <GraphicFemale Value="HumanWarriorF01" />
+    <GraphicFemale Value="HumanWarriorF02" />
+    <GraphicFemale Value="HumanWarriorF03" />
+    <GraphicFemale Value="HumanWarriorF04" />
+    <GraphicFemale Value="HumanWarriorF05" />
+    <GraphicFemale Value="HumanWarriorF06" />
+    <GraphicFemale Value="HumanWarriorF07" />
+    <GraphicFemale Value="HumanWarriorF08" />
+    <ClassSkills Value="SKILL_PACK-PC_PUGILISTA" />
+  </SUBRACE-PC_PUGILISTA_HUM>
+  <SUBRACE-PC_PUGILISTA_ELF>
+    <DescriptionInfo Name="DES_PC_PUGILISTA" Description="DES_PC_PUGILISTA_DES" IconName="PC_classe_punho" />
+    <Race Value="RACE-ELF" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-HUMANOID" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-WARRIOR" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-WOODFOLK" />
+    <MainSubraceAttributes Amount="11" Tag="TAG-WITS" />
+    <MainSubraceAttributes Amount="14" Tag="TAG-STRENGTH" />
+    <MainSubraceAttributes Amount="13" Tag="TAG-PERCEPTION" />
+    <MainSubraceAttributes Amount="12" Tag="TAG-INTELLIGENCE" />
+    <MainSubraceAttributes Amount="12" Tag="TAG-WISDOM" />
+    <MainSubraceAttributes Amount="6" Tag="TAG-MYSTICISM" />
+    <MainSubraceAttributes Amount="12" Tag="TAG-DESTINY" />
+    <SecondSubraceAttributes Amount="75" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    <SecondSubraceAttributes Amount="50" Tag="TAG-MAX_HEALTH_MENTAL" />
+    <SecondSubraceAttributes Amount="35" Tag="TAG-MAX_HEALTH_SPIRIT" />
+    <SecondSubraceAttributes Amount="5" Tag="TAG-MOVEMENT_RANGE" />
+    <SecondSubraceAttributes Amount="2" Tag="TAG-RANGE_OF_SIGHT_DAY" />
+    <SecondSubraceAttributes Amount="2" Tag="TAG-RANGE_OF_SIGHT_NIGHT" />
+    <SecondSubraceAttributes Amount="10" Tag="TAG-MORALE" />
+    <SecondSubraceAttributes Amount="250" Tag="TAG-PERSONAL_CARRY_LIMIT" />
+    <CommonSubraceAttributes Chance="50">
+      <CountedTag Amount="1" Tag="TAG-GENDER_FEMALE" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="3">
+      <CountedTag Amount="1" Tag="TAG-CREEPY" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="70">
+      <CountedTag Amount="1" Tag="TAG-ATTRACTIVE" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="30">
+      <CountedTag Amount="1" Tag="TAG-BEAUTIFUL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="80">
+      <CountedTag Amount="4" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="70">
+      <CountedTag Amount="5" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="60">
+      <CountedTag Amount="3" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="50">
+      <CountedTag Amount="4" Tag="TAG-MAX_HEALTH_MENTAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="40">
+      <CountedTag Amount="3" Tag="TAG-MAX_HEALTH_MENTAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="80">
+      <CountedTag Amount="2" Tag="TAG-PERCEPTION" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="80">
+      <CountedTag Amount="2" Tag="TAG-PERCEPTION" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="70">
+      <CountedTag Amount="2" Tag="TAG-STRENGTH" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="70">
+      <CountedTag Amount="2" Tag="TAG-STRENGTH" />
+    </CommonSubraceAttributes>
+    <NaturalSkills Value="SKILL_PACK-RACE_ELVES" />
+    <AdvancementSkills Value="SKILL_PACK-ELF_WARRIOR" />
+    <GraphicMale Value="ElfWarriorM1" />
+    <GraphicMale Value="ElfWarriorM2" />
+    <GraphicMale Value="ElfWarriorM3" />
+    <GraphicFemale Value="ElfWarriorF1" />
+    <GraphicFemale Value="ElfWarriorF2" />
+    <ClassSkills Value="SKILL_PACK-PC_PUGILISTA" />
+  </SUBRACE-PC_PUGILISTA_ELF>
+  <SUBRACE-PC_PUGILISTA_DWARF>
+    <DescriptionInfo Name="DES_PC_PUGILISTA" Description="DES_PC_PUGILISTA_DES" IconName="PC_classe_punho" />
+    <Race Value="RACE-DWARF" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-HUMANOID" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-WARRIOR" />
+    <MainSubraceAttributes Amount="6" Tag="TAG-WITS" />
+    <MainSubraceAttributes Amount="18" Tag="TAG-STRENGTH" />
+    <MainSubraceAttributes Amount="11" Tag="TAG-PERCEPTION" />
+    <MainSubraceAttributes Amount="18" Tag="TAG-INTELLIGENCE" />
+    <MainSubraceAttributes Amount="14" Tag="TAG-WISDOM" />
+    <MainSubraceAttributes Amount="2" Tag="TAG-MYSTICISM" />
+    <MainSubraceAttributes Amount="3" Tag="TAG-DESTINY" />
+    <SecondSubraceAttributes Amount="70" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    <SecondSubraceAttributes Amount="80" Tag="TAG-MAX_HEALTH_MENTAL" />
+    <SecondSubraceAttributes Amount="15" Tag="TAG-MAX_HEALTH_SPIRIT" />
+    <SecondSubraceAttributes Amount="5" Tag="TAG-MOVEMENT_RANGE" />
+    <SecondSubraceAttributes Amount="2" Tag="TAG-RANGE_OF_SIGHT_DAY" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-RANGE_OF_SIGHT_NIGHT" />
+    <SecondSubraceAttributes Amount="10" Tag="TAG-MORALE" />
+    <SecondSubraceAttributes Amount="250" Tag="TAG-PERSONAL_CARRY_LIMIT" />
+    <CommonSubraceAttributes Chance="20">
+      <CountedTag Amount="1" Tag="TAG-ATTRACTIVE" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="60">
+      <CountedTag Amount="10" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="60">
+      <CountedTag Amount="8" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="60">
+      <CountedTag Amount="5" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="40">
+      <CountedTag Amount="7" Tag="TAG-MAX_HEALTH_MENTAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="40">
+      <CountedTag Amount="7" Tag="TAG-MAX_HEALTH_SPIRIT" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="60">
+      <CountedTag Amount="2" Tag="TAG-WITS" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="60">
+      <CountedTag Amount="2" Tag="TAG-STRENGTH" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="40">
+      <CountedTag Amount="2" Tag="TAG-STRENGTH" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="40">
+      <CountedTag Amount="2" Tag="TAG-WITS" />
+    </CommonSubraceAttributes>
+    <NaturalEffects Value="SKILL_PACK-RACE_DWARVES_FOODIE" />
+    <NaturalSkills Value="SKILL_PACK-RACE_DWARVES" />
+    <AdvancementSkills Value="SKILL_PACK-DWARF_WARRIOR" />
+    <GraphicMale Value="DwarfWarriorM1" />
+    <GraphicMale Value="DwarfWarriorM2" />
+    <GraphicMale Value="DwarfWarriorM3" />
+    <GraphicMale Value="DwarfWarriorM4" />
+    <GraphicMale Value="DwarfWarriorM5" />
+    <GraphicMale Value="DwarfWarriorM6" />
+    <GraphicMale Value="DwarfWarriorM7" />
+    <GraphicMale Value="DwarfWarriorM8" />
+    <GraphicMale Value="DwarfBanditM1" />
+    <GraphicMale Value="DwarfBeastHunterM1" />
+    <GraphicFemale Value="DwarfBeastHunterM1" />
+    <ClassSkills Value="SKILL_PACK-PC_PUGILISTA" />
+  </SUBRACE-PC_PUGILISTA_DWARF>
+  <SUBRACE-PC_PUGILISTA_GOB>
+    <DescriptionInfo Name="DES_PC_PUGILISTA" Description="DES_PC_PUGILISTA_DES" IconName="PC_classe_punho" />
+    <Race Value="RACE-GOBLIN" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-HUMANOID" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-WARRIOR" />
+    <MainSubraceAttributes Amount="5" Tag="TAG-WITS" />
+    <MainSubraceAttributes Amount="7" Tag="TAG-STRENGTH" />
+    <MainSubraceAttributes Amount="6" Tag="TAG-PERCEPTION" />
+    <MainSubraceAttributes Amount="4" Tag="TAG-INTELLIGENCE" />
+    <MainSubraceAttributes Amount="3" Tag="TAG-WISDOM" />
+    <MainSubraceAttributes Amount="5" Tag="TAG-MYSTICISM" />
+    <MainSubraceAttributes Amount="5" Tag="TAG-DESTINY" />
+    <SecondSubraceAttributes Amount="25" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    <SecondSubraceAttributes Amount="17" Tag="TAG-MAX_HEALTH_MENTAL" />
+    <SecondSubraceAttributes Amount="20" Tag="TAG-MAX_HEALTH_SPIRIT" />
+    <SecondSubraceAttributes Amount="5" Tag="TAG-MOVEMENT_RANGE" />
+    <SecondSubraceAttributes Amount="2" Tag="TAG-RANGE_OF_SIGHT_DAY" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-RANGE_OF_SIGHT_NIGHT" />
+    <SecondSubraceAttributes Amount="10" Tag="TAG-MORALE" />
+    <SecondSubraceAttributes Amount="225" Tag="TAG-PERSONAL_CARRY_LIMIT" />
+    <CommonSubraceAttributes Chance="40">
+      <CountedTag Amount="1" Tag="TAG-GENDER_FEMALE" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="10">
+      <CountedTag Amount="1" Tag="TAG-CREEPY" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="10">
+      <CountedTag Amount="1" Tag="TAG-ATTRACTIVE" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="3">
+      <CountedTag Amount="1" Tag="TAG-BEAUTIFUL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="40">
+      <CountedTag Amount="3" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="40">
+      <CountedTag Amount="2" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="40">
+      <CountedTag Amount="2" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="30">
+      <CountedTag Amount="1" Tag="TAG-PERCEPTION" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="30">
+      <CountedTag Amount="1" Tag="TAG-WITS" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="30">
+      <CountedTag Amount="1" Tag="TAG-STRENGTH" />
+    </CommonSubraceAttributes>
+    <NaturalSkills Value="SKILL_PACK-RACE_GOB" />
+    <AdvancementSkills Value="SKILL_PACK-GOB_WARRIOR" />
+    <GraphicMale Value="GoblinSkirmisherM1" />
+    <GraphicMale Value="GoblinSkirmisherM2" />
+    <GraphicMale Value="GoblinSkirmisherM3" />
+    <GraphicMale Value="GoblinSkirmisherM4" />
+    <GraphicMale Value="GoblinSkirmisherM5" />
+    <GraphicFemale Value="GoblinSkirmisherF1" />
+    <GraphicFemale Value="GoblinSkirmisherF2" />
+    <ClassSkills Value="SKILL_PACK-PC_PUGILISTA" />
+  </SUBRACE-PC_PUGILISTA_GOB>
+  <SUBRACE-PC_PUGILISTA_ORC>
+    <DescriptionInfo Name="DES_PC_PUGILISTA" Description="DES_PC_PUGILISTA_DES" IconName="PC_classe_punho" />
+    <Race Value="RACE-ORC" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-HUMANOID" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-WARRIOR" />
+    <MainSubraceAttributes Amount="6" Tag="TAG-WITS" />
+    <MainSubraceAttributes Amount="13" Tag="TAG-STRENGTH" />
+    <MainSubraceAttributes Amount="9" Tag="TAG-PERCEPTION" />
+    <MainSubraceAttributes Amount="6" Tag="TAG-INTELLIGENCE" />
+    <MainSubraceAttributes Amount="6" Tag="TAG-WISDOM" />
+    <MainSubraceAttributes Amount="3" Tag="TAG-MYSTICISM" />
+    <MainSubraceAttributes Amount="2" Tag="TAG-DESTINY" />
+    <SecondSubraceAttributes Amount="55" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    <SecondSubraceAttributes Amount="20" Tag="TAG-MAX_HEALTH_MENTAL" />
+    <SecondSubraceAttributes Amount="15" Tag="TAG-MAX_HEALTH_SPIRIT" />
+    <SecondSubraceAttributes Amount="5" Tag="TAG-MOVEMENT_RANGE" />
+    <SecondSubraceAttributes Amount="2" Tag="TAG-RANGE_OF_SIGHT_DAY" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-RANGE_OF_SIGHT_NIGHT" />
+    <SecondSubraceAttributes Amount="10" Tag="TAG-MORALE" />
+    <SecondSubraceAttributes Amount="250" Tag="TAG-PERSONAL_CARRY_LIMIT" />
+    <CommonSubraceAttributes Chance="50">
+      <CountedTag Amount="1" Tag="TAG-GENDER_FEMALE" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="10">
+      <CountedTag Amount="1" Tag="TAG-CREEPY" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="10">
+      <CountedTag Amount="1" Tag="TAG-ATTRACTIVE" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="3">
+      <CountedTag Amount="1" Tag="TAG-BEAUTIFUL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="60">
+      <CountedTag Amount="3" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="50">
+      <CountedTag Amount="2" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="40">
+      <CountedTag Amount="2" Tag="TAG-MAX_HEALTH_MENTAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="40">
+      <CountedTag Amount="1" Tag="TAG-WITS" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="60">
+      <CountedTag Amount="1" Tag="TAG-STRENGTH" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="40">
+      <CountedTag Amount="1" Tag="TAG-PERCEPTION" />
+    </CommonSubraceAttributes>
+    <NaturalSkills Value="SKILL_PACK-RACE_ORCS" />
+    <AdvancementSkills Value="SKILL_PACK-ORC_WARRIOR" />
+    <GraphicMale Value="OrcWarriorM1" />
+    <GraphicMale Value="OrcWarriorM2" />
+    <GraphicMale Value="OrcWarriorM3" />
+    <GraphicMale Value="OrcWarriorM4" />
+    <GraphicMale Value="OrcWarriorM5" />
+    <GraphicMale Value="OrcWarriorM6" />
+    <GraphicFemale Value="OrcWarriorF1" />
+    <GraphicFemale Value="OrcWarriorF2" />
+    <GraphicFemale Value="OrcWarriorF3" />
+    <GraphicFemale Value="OrcWarriorF4" />
+    <ClassSkills Value="SKILL_PACK-PC_PUGILISTA" />
+  </SUBRACE-PC_PUGILISTA_ORC>
+  <SUBRACE-PC_PUGILISTA_PIRATE_ORC>
+    <DescriptionInfo Name="DES_PC_PUGILISTA" Description="DES_PC_PUGILISTA_DES" IconName="PC_classe_punho" />
+    <Race Value="RACE-PIRATES" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-HUMANOID" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-WARRIOR" />
+    <MainSubraceAttributes Amount="6" Tag="TAG-WITS" />
+    <MainSubraceAttributes Amount="11" Tag="TAG-STRENGTH" />
+    <MainSubraceAttributes Amount="9" Tag="TAG-PERCEPTION" />
+    <MainSubraceAttributes Amount="6" Tag="TAG-INTELLIGENCE" />
+    <MainSubraceAttributes Amount="6" Tag="TAG-WISDOM" />
+    <MainSubraceAttributes Amount="3" Tag="TAG-MYSTICISM" />
+    <MainSubraceAttributes Amount="2" Tag="TAG-DESTINY" />
+    <SecondSubraceAttributes Amount="55" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    <SecondSubraceAttributes Amount="20" Tag="TAG-MAX_HEALTH_MENTAL" />
+    <SecondSubraceAttributes Amount="15" Tag="TAG-MAX_HEALTH_SPIRIT" />
+    <SecondSubraceAttributes Amount="5" Tag="TAG-MOVEMENT_RANGE" />
+    <SecondSubraceAttributes Amount="2" Tag="TAG-RANGE_OF_SIGHT_DAY" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-RANGE_OF_SIGHT_NIGHT" />
+    <SecondSubraceAttributes Amount="10" Tag="TAG-MORALE" />
+    <SecondSubraceAttributes Amount="250" Tag="TAG-PERSONAL_CARRY_LIMIT" />
+    <CommonSubraceAttributes Chance="50">
+      <CountedTag Amount="1" Tag="TAG-GENDER_FEMALE" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="10">
+      <CountedTag Amount="1" Tag="TAG-CREEPY" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="10">
+      <CountedTag Amount="1" Tag="TAG-ATTRACTIVE" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="3">
+      <CountedTag Amount="1" Tag="TAG-BEAUTIFUL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="60">
+      <CountedTag Amount="3" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="50">
+      <CountedTag Amount="2" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="40">
+      <CountedTag Amount="2" Tag="TAG-MAX_HEALTH_MENTAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="40">
+      <CountedTag Amount="1" Tag="TAG-WITS" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="60">
+      <CountedTag Amount="1" Tag="TAG-STRENGTH" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="40">
+      <CountedTag Amount="1" Tag="TAG-PERCEPTION" />
+    </CommonSubraceAttributes>
+    <NaturalSkills Value="SKILL_PACK-RACE_PIRATES_ORC" />
+    <AdvancementSkills Value="SKILL_PACK-PIRATES_ORC_WARRIOR" />
+    <GraphicMale Value="OrcPirateM1" />
+    <GraphicFemale Value="OrcPirateF1" />
+    <ClassSkills Value="SKILL_PACK-PC_PUGILISTA" />
+  </SUBRACE-PC_PUGILISTA_PIRATE_ORC>
+  <SUBRACE-PC_PUGILISTA_GNOLL>
+    <DescriptionInfo Name="DES_PC_PUGILISTA" Description="DES_PC_PUGILISTA_DES" IconName="PC_classe_punho" />
+    <Race Value="RACE-GNOLL" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-HUMANOID" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-WARRIOR" />
+    <MainSubraceAttributes Amount="5" Tag="TAG-WITS" />
+    <MainSubraceAttributes Amount="8" Tag="TAG-STRENGTH" />
+    <MainSubraceAttributes Amount="6" Tag="TAG-PERCEPTION" />
+    <MainSubraceAttributes Amount="5" Tag="TAG-INTELLIGENCE" />
+    <MainSubraceAttributes Amount="4" Tag="TAG-WISDOM" />
+    <MainSubraceAttributes Amount="3" Tag="TAG-MYSTICISM" />
+    <MainSubraceAttributes Amount="4" Tag="TAG-DESTINY" />
+    <SecondSubraceAttributes Amount="27" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    <SecondSubraceAttributes Amount="17" Tag="TAG-MAX_HEALTH_MENTAL" />
+    <SecondSubraceAttributes Amount="15" Tag="TAG-MAX_HEALTH_SPIRIT" />
+    <SecondSubraceAttributes Amount="6" Tag="TAG-MOVEMENT_RANGE" />
+    <SecondSubraceAttributes Amount="2" Tag="TAG-RANGE_OF_SIGHT_DAY" />
+    <SecondSubraceAttributes Amount="1" Tag="TAG-RANGE_OF_SIGHT_NIGHT" />
+    <SecondSubraceAttributes Amount="10" Tag="TAG-MORALE" />
+    <SecondSubraceAttributes Amount="250" Tag="TAG-PERSONAL_CARRY_LIMIT" />
+    <CommonSubraceAttributes Chance="100">
+      <CountedTag Amount="1" Tag="TAG-GENDER_OTHER" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="15">
+      <CountedTag Amount="1" Tag="TAG-CREEPY" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="10">
+      <CountedTag Amount="1" Tag="TAG-ATTRACTIVE" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="5">
+      <CountedTag Amount="1" Tag="TAG-BEAUTIFUL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="40">
+      <CountedTag Amount="3" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="40">
+      <CountedTag Amount="2" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="40">
+      <CountedTag Amount="1" Tag="TAG-MAX_HEALTH_PHYSICAL" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="70">
+      <CountedTag Amount="1" Tag="TAG-PERCEPTION" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="50">
+      <CountedTag Amount="1" Tag="TAG-WITS" />
+    </CommonSubraceAttributes>
+    <CommonSubraceAttributes Chance="50">
+      <CountedTag Amount="1" Tag="TAG-STRENGTH" />
+    </CommonSubraceAttributes>
+    <NaturalSkills Value="SKILL_PACK-RACE_GNOLL" />
+    <AdvancementSkills Value="SKILL_PACK-GNOLL_WARRIOR" />
+    <GraphicMale Value="GnollWarmonger" />
+    <GraphicFemale Value="GnollWarmonger" />
+    <ClassSkills Value="SKILL_PACK-PC_PUGILISTA" />
+  </SUBRACE-PC_PUGILISTA_GNOLL>
 </SUBRACES>
